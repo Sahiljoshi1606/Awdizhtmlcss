@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> Day 5</title>
+    <style>
+        body {
+            text-align: center;
+        }
+
+        button {
+            background-color: green;
+        }
+
+        form {
+           
+            width: 30%;
+            margin: auto;
+            background-color: aqua;
+        }
+
+        input {
+            border: 2px solid brown;
+        }
+        fieldset{
+            border: 5px solid black;
+            box-shadow: 2px 4px 10px 0px red;
+        }
+    </style>
+</head>
+
+
+<body>
+    <h1>Feedback form..</h1>
+    <form>
+        <fieldset>
+            <legend > Feedback form</legend>
+            <label for="Name" ">Name</label><br>
+        <input required type=" text" id="name" placeholder="Name" /><br>
+            <label for="email">email</label><br>
+            <input required type="email" id="email" placeholder="abc@example.com" /><br>
+            <label for="message">Message:</label><br>
+            <textarea id="message" name="message" rows="4"></textarea><br>
+            <label>Gender</label><br>
+            <input type="radio" id="ab" />
+            <label for="ab">male</label>
+            <input type="radio" id="bc" />
+            <label for="bc">female</label><br>
+            <button>submit</button>
+        </fieldset>
+    </form>
+</body>
+
+</html>
