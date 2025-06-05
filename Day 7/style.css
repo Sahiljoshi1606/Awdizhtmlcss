@@ -1,0 +1,9 @@
+a{
+    border: 2px solid black;
+    margin: auto;
+    width: 30%;
+    background-color: hsl(180, 100%, 50%);
+}
+body{
+    background-color: antiquewhite;
+}
