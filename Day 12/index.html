@@ -130,12 +130,12 @@
 
         #main4 {
             /* border: 2px solid black; */
-            margin-bottom: 20px;
+            margin-bottom: 5px;
             margin-top: 20px;
             margin-right: 20px;
             padding: 10px;
 
-            height: 50%%;
+            height: 20%;
         }
 
         #main4sub {
@@ -149,7 +149,7 @@
             /* border: 2px solid black; */
             display: flex;
             margin: 10px;
-            height: 18%;
+            height: 45%;
         }
 
         #main4template {
@@ -165,24 +165,102 @@
             width: 266px;
             margin: 10px;
             padding: 5px;
+            /* border: 2px solid black; */
         }
 
         #main4template4 {
-            height: 266px;
-            width: 266px;
-            margin: 10px;
-            padding: 5px;
+            /* height: 266px;
+            width: 350px;
+            margin: 5px;
+            padding: 5px; */
             display: none;
+            /* border: 2px solid red; */
 
         }
 
         #main4lower2 {
-            display: flex;
-            margin: 40px;
-            width: 90%;
-            height: 20%;
+            /* display: flex;
+            margin: 10px;
+            width: 95%;
+            height: 50%; */
+            display: none;
             /* border: 1px solid black; */
         }
+
+        #kids {
+
+
+            /* border: 2px solid black; */
+            height: 35%;
+            margin-right: 10px;
+            /* border: 2px solid red; */
+
+            display: flex;
+
+        }
+
+        #kids1 {
+            height: 55%;
+          
+            width: 100%;
+            padding: 10px;
+            /* border: 1px solid black; */
+            
+           padding-top: 150px;
+
+        }
+        #kids1 :nth-child(1){
+            font-size: 50px;
+        }
+        #buttonshopnow{
+                background-color:#1570c3 ;
+                color: white;
+                border: none;
+                width: 15%;
+                height: 30px;
+                border-radius: 10px;
+                margin-top: 10px    ;
+             }
+
+        #kidsphoto {
+            height: 70%;
+            width: 100%;
+            /* border: 1px solid black; */
+            border-radius: 20px;
+            margin: 20px;
+        }
+
+        #kidsmobile {
+            height: 35%;
+            margin-right: 10px;
+            /* border: 2px solid red; */
+            display: none;
+        }
+
+        #mobileunder1 {
+            height: 50%;
+            width: 100%;
+            padding: 10px;
+            /* border: 1px solid black; */
+           
+            align-items: end;
+            display: flex;
+            display: none;
+        }
+        #mobileunder1 > div p{
+font-size: 50px;
+        }
+
+        #mobileunder2 {
+            height: 70%;
+            width: 100%;
+            /* border: 1px solid black; */
+            border-radius: 20px;
+            margin: 20px;
+            display: none;
+        }
+
+
 
 
         @media (min-width:300px) and (max-width:700px) {
@@ -230,6 +308,11 @@
                 /* border: 2px solid black; */
                 border-radius: 10px;
 
+
+            }
+
+            #main4 {
+                height: 40%;
             }
 
             #submobile {
@@ -255,11 +338,51 @@
                 display: none;
             }
 
+            #main4lower2 {
+                display: flex;
+                margin: 10px;
+                width: 95%;
+                height: 45%;
+                /* border: 1px solid black; */
+            }
+
             #main4template4 {
                 display: block;
+                margin: 10px;
+                width: 95%;
+                height: 80%;
+                /* border: 1px solid black; */
+
 
             }
 
+            #kids {
+                display: none;
+            }
+
+            #kidsmobile {
+                display: block;
+            }
+
+            #mobileunder1{
+                display: block;
+                height: 35%;
+            }
+             #mobileunder2{
+                display: block;
+                margin: auto;
+                height: 40%;
+                width: 90%;
+             }
+             #buttonshopnow{
+                background-color:#1570c3 ;
+                color: white;
+                border: none;
+                width: 15%;
+                height: 30px;
+                border-radius: 10px;
+                margin-top: 10px    ;
+             }
 
         }
     </style>
@@ -376,6 +499,35 @@
                 </div>
             </div>
         </div>
+        <div id="kids">
+            <div id="kids1">
+                <p>KIDS COLLECTION 20% OFF SALE </p>
+                <p>Exclusive, one-time offer</p>
+                <button id="buttonshopnow">Shop Now</button>
+
+            </div>
+
+            <div id="kidsphoto">
+                <img src="./Kids Sale.jpg" alt="" style="height: 100%; width: 100%; border-radius: 20px;">
+            </div>
+
+        </div>
+        <div id="kidsmobile">
+            <div id="mobileunder1">
+                <p style="font-size: 50px;">KIDS COLLECTION 20% OFF SALE </p>
+                <p>Exclusive, one-time offer</p>
+                <button id="buttonshopnow">shop Now</button>
+
+            </div>
+
+            <div id="mobileunder2">
+                <img src="./Kids Sale.jpg" alt="" style="height: 100%; width: 100%; border-radius: 20px;">
+            </div>
+
+        </div>
+
+
+
     </div>
 
 
