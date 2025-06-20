@@ -1,0 +1,1329 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home page</title>
+
+    <style>
+        * {
+            padding: 0px;
+            margin: 0px;
+            box-sizing: border-box;
+        }
+
+        #main {
+            height: 2000px;
+            width: 100%;
+            /* margin: 0px 5px; */
+            margin-top: 52px;
+            /* border: 1px solid black; */
+            /* margin: 0px 26px; */
+            background-color: #f3f2f0;
+            padding: 10px;
+
+        }
+
+        #header {
+            width: 100%;
+            height: 5%;
+            /* border: 1px solid black; */
+            display: flex;
+            background-color: white;
+            position: fixed;
+            justify-content: space-between;
+            padding: 10px;
+
+        }
+
+        #logo {
+            width: 10%;
+            height: 70%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 10px;
+            /* border: 1px solid black; */
+        }
+
+        #search {
+            width: 10%;
+            height: 70%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 10px;
+            ;
+            /* border: 1px solid black; */
+        }
+
+        #searchmobile {
+            display: none;
+        }
+
+        #mobilesearchicom {
+            display: none;
+        }
+
+        #home {
+            width: 10%;
+            height: 70%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 10px;
+            /* border: 1px solid black; */
+        }
+
+        #homemobile {
+            display: none;
+        }
+
+        #network {
+            width: 10%;
+            height: 70%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 10px;
+            /* border: 1px solid black; */
+        }
+
+        #job {
+            width: 10%;
+            height: 70%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 10px;
+            /* border: 1px solid black; */
+        }
+
+        #masage {
+            width: 10%;
+            height: 70%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 10px;
+            /* border: 1px solid black; */
+        }
+
+        #notification {
+            width: 10%;
+            height: 70%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 10px;
+            /* border: 1px solid black; */
+        }
+
+        #about {
+            width: 10%;
+            height: 70%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 10px;
+            /* border: 1px solid black; */
+        }
+
+        #networkmobile {
+            display: none;
+        }
+
+        #jobmobile {
+            display: none;
+        }
+
+        #masagemobile {
+            display: none;
+        }
+
+        #notificationmobile {
+            display: none;
+        }
+
+        #aboutmobile {
+            display: none;
+        }
+
+        #forbusinessmobile {
+            display: none;
+        }
+
+        #forbusiness {
+            display: none;
+        }
+
+        #headerlower {
+            height: 80px;
+            /* border: 1px solid black; */
+            background-color: rgb(160, 180, 183);
+            margin-top: 40px;
+        }
+
+        #selfname {
+            margin-top: 30px;
+            margin-bottom: 5px;
+            background-color: white;
+
+        }
+
+        #info {
+            padding: 0px 10px;
+            background-color: white;
+        }
+
+        #headerlowerlaptop {
+            display: none;
+        }
+
+        #selfimg {
+            border-radius: 50%;
+            height: 70px;
+            width: 70px;
+            margin-top: 35px;
+            margin-left: 10px;
+            /* border: 1px solid red; */
+        }
+
+        #infolaptop {
+            display: none;
+        }
+
+        #seemore {
+            height: 40px;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #f3f2f0;
+            margin-top: 10px;
+            border-radius: 10px;
+            /* border: 1px solid black; */
+            margin-bottom: 10px;
+        }
+
+        #imr {
+            display: none;
+        }
+
+        #left {
+            display: none;
+        }
+
+        #right {
+            display: none;
+        }
+
+        #middel {
+            display: none;
+        }
+
+        #postmobile {
+            height: 100px;
+            width: 100%;
+            /* border: 1px solid red; */
+            background-color: white;
+            border-radius: 10px;
+            margin-bottom: 10px;
+        }
+
+        #postmobile1 {
+            display: flex;
+            align-items: flex-start;
+            padding: 15px;
+        }
+
+        #postmobile2 {
+            display: flex;
+            justify-content: space-around;
+        }
+
+        #middelsecoundmobile {
+            height: 300px;
+            width: 100%;
+            /* border: 1px solid black; */
+            padding: 10px;
+            background-color: white;
+            border-radius: 10px;
+            margin-bottom: 70px;
+        }
+
+        #middelsecound1mobile {
+            height: 150px;
+            width: 95%;
+            margin: 10px;
+            padding: 10px;
+            /* border: 1px solid black; */
+            border-radius: 10px;
+            background-color: #f4f1f8;
+        }
+
+        #middelsecound2mobile {
+            height: 30px;
+            width: 100%;
+            margin-top: 10px;
+            margin-bottom: 40px;
+            /* border: 1px solid black; */
+            display: flex;
+            justify-content: space-between;
+        }
+
+        #middelsecoundcogratsmobile {
+            height: 50px;
+            padding: 5px;
+            width: 48%;
+            border: 2px solid black;
+            border-radius: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 5px;
+        }
+
+        #right1mobile {
+            height: 350px;
+            width: 100%;
+            padding: 5px;
+            background-color: white;
+            margin-top: 20px;
+            border-radius: 10px;
+            /* border: 1px solid black; */
+        }
+
+        #right1under1mobile {
+            /* margin-bottom: 5px; */
+            font-size: 20px;
+            text-decoration: none;
+            font-weight: 100;
+        }
+
+        #right2mobile {
+            height: 30px;
+            /* border: 2px solid black; */
+            background-color: white;
+            border-radius: 10px;
+
+        }
+
+        #right3mobile {
+            /* border: 1px solid black; */
+            align-items: flex-end;
+            display: flex;
+            margin-top: 70px;
+        }
+        #footerrightmobile{
+           text-align: center;
+           
+        }
+
+
+
+
+
+        @media (min-width: 1024px) {
+            #main {
+                height: 1120px;
+                width: 98%;
+                margin-left: 20px;
+                margin-right: 20px;
+                margin-top: 30px;
+                background-color: #f4f2ee;
+            }
+
+            #header {
+                width: 100%;
+                height: 7%;
+                /* border: 1px solid black; */
+                display: flex;
+                position: fixed;
+                justify-content: space-between;
+                background-color: #ffffff;
+
+                align-items: center;
+
+            }
+
+            #search {
+                display: none;
+            }
+
+            #searchmobile {
+                display: block;
+                display: flex;
+                border: 1px solid black;
+                height: 30px;
+                width: 290px;
+                align-items: center;
+                border-radius: 20px;
+                margin-left: 10px;
+
+            }
+
+            #mobilesearchicom {
+                display: block;
+                align-items: center;
+                display: flex;
+                justify-content: center;
+                /* border: 1px solid black; */
+                height: 50px;
+                width: 50px;
+                padding-left: 30px;
+            }
+
+            #home {
+                display: none;
+            }
+
+            #homemobile {
+                display: block;
+                width: 3%;
+                height: 98%;
+                /* border: 1px solid black; */
+                align-items: center;
+                margin-left: 100px;
+                margin-bottom: 25px;
+                text-align: center;
+            }
+
+            #network {
+                display: none;
+            }
+
+            #networkmobile {
+                display: block;
+                width: 5%;
+                height: 98%;
+                /* border: 1px solid black; */
+                align-items: center;
+                margin-left: 100px;
+                margin-bottom: 25px;
+                text-align: center;
+                justify-content: center;
+            }
+
+            #job {
+                display: none;
+            }
+
+            #jobmobile {
+                display: block;
+                width: 5%;
+                height: 98%;
+                /* border: 1px solid black; */
+                align-items: center;
+                margin-left: 100px;
+                margin-bottom: 25px;
+                text-align: center;
+            }
+
+            #masage {
+                display: none;
+            }
+
+            #masagemobile {
+                display: block;
+                width: 5%;
+                height: 98%;
+                /* border: 1px solid black; */
+                align-items: center;
+                margin-left: 100px;
+                margin-bottom: 25px;
+                text-align: center;
+            }
+
+            #notification {
+                display: none;
+            }
+
+            #notificationmobile {
+                display: block;
+                width: 5%;
+                height: 98%;
+                /* border: 1px solid black; */
+                align-items: center;
+                margin-left: 100px;
+                margin-bottom: 25px;
+                text-align: center;
+            }
+
+            #about {
+                display: none;
+            }
+
+            #aboutmobile {
+                display: block;
+                width: 5%;
+                height: 98%;
+                /* border: 1px solid black; */
+                align-items: center;
+                margin-left: 100px;
+                margin-bottom: 25px;
+                text-align: center;
+
+            }
+
+            #forbusiness {
+                display: none;
+            }
+
+            #forbusinessmobile {
+                display: block;
+                width: 5%;
+                height: 98%;
+                /* border: 1px solid black; */
+                align-items: center;
+                margin-left: 50px;
+                margin-right: 30px;
+                margin-bottom: 25px;
+                text-align: center;
+            }
+
+            #headerlower {
+                display: none;
+            }
+
+            #headerlowerlaptop {
+                display: block;
+                width: 15%;
+                height: 10%;
+                /* border: 1px solid black; */
+                background-color: rgb(160, 180, 183);
+                margin-left: 15px;
+                margin-top: 15px;
+                margin-bottom: 5px;
+                border-radius: 10px;
+
+            }
+
+            #info {
+                display: none;
+            }
+
+            #infolaptop {
+                display: block;
+                /* border: 1px solid black; */
+                width: 15%;
+                margin-left: 15px;
+                background-color: #ffffff;
+                border-radius: 10px;
+
+            }
+
+            #selfimg {
+                border-radius: 50%;
+                height: 50px;
+                width: 70px;
+                margin-top: 10px;
+                margin-left: 10px;
+                border: 1px solid red;
+            }
+
+            #seemore {
+                display: none;
+            }
+
+            #imr {
+                height: 1100px;
+                width: 100%;
+                display: flex;
+
+                margin-top: 70px;
+
+            }
+
+            #left {
+                height: 95%;
+                width: 30%;
+                /* border: 1px solid black; */
+                /* display: flex;
+                justify-content: end; */
+                margin-right: 5px;
+                background-color: #f3f2f0;
+                margin-bottom: 10px;
+                display: block;
+            }
+
+            #leftfirst {
+                /* border: 1px solid black; */
+                margin-left: 140px;
+                height: 160px;
+                width: 250px;
+                margin-top: 10px;
+                margin-right: 5px;
+                border-radius: 10px;
+
+            }
+
+            #leftfirst1 {
+                height: 70px;
+                width: 100%;
+                background-color: #d9e5e7;
+                align-items: flex-end;
+                display: flex;
+                justify-content: center;
+                border-radius: 10px;
+            }
+
+            #leftfirst1img {
+                height: 70px;
+                width: 70px;
+                border-radius: 50%;
+            }
+
+            #leftfirst2 {
+                height: 100px;
+                width: 100%;
+                margin-left: 10px;
+            }
+
+            #leftsecound {
+                /* border: 1px solid black; */
+                margin-left: 10px;
+                height: 60px;
+                margin-top: 10px;
+                width: 250px;
+                /* display: flex; */
+                /* align-items: flex-end; */
+                border-radius: 10px;
+                background-color: white;
+                margin-left: 140px;
+                border-radius: 10px;
+            }
+
+            #leftsecound1 {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                height: 20px;
+                width: 100%;
+                /* border: 1px solid black; */
+                padding: 10px;
+            }
+
+            #leftthird {
+                height: 100px;
+                width: 250px;
+                /* border: 1px solid black; */
+                margin-left: 140px;
+                background-color: white;
+                margin-top: 10px;
+                border-radius: 10px;
+            }
+
+            #leftthirdfirst {
+                display: flex;
+                font-size: 15px;
+
+            }
+
+            #leftthirdfirst1 {
+                margin-left: 10px;
+            }
+
+
+
+            #middel {
+                height: 95%;
+                width: 40%;
+                /* border: 1px solid black; */
+                background-color: #f3f2f0;
+                padding: 10px;
+                display: block;
+            }
+
+            #post {
+                height: 100px;
+                width: 100%;
+                /* border: 1px solid red; */
+                background-color: white;
+                border-radius: 10px;
+                margin-bottom: 10px;
+            }
+
+            #post1 {
+                display: flex;
+                align-items: flex-start;
+                padding: 15px;
+            }
+
+            #post2 {
+                display: flex;
+                justify-content: space-around;
+            }
+
+            #middelsecound {
+                height: 300px;
+                background-color: white;
+                border-radius: 10px;
+                width: 100%;
+                /* border: 1px solid black; */
+                padding: 10px;
+            }
+
+            #middelsecound1 {
+                height: 140px;
+                background-color: #f4f1f8;
+                width: 95%;
+                /* border: 1px solid black; */
+                margin: 10px;
+                border-radius: 10px;
+            }
+
+            #middelsecound2 {
+                height: 50px;
+                width: 100%;
+                margin-top: 10px;
+                /* border: 1px solid black; */
+                display: flex;
+                justify-content: space-between;
+            }
+
+            #middelsecoundcograts {
+                height: 80%;
+                padding: 3px;
+                width: 30%;
+                border: 1px solid black;
+                border-radius: 25px;
+                display: flex;
+                margin-top: 3px;
+                align-items: center;
+                justify-content: center;
+            }
+
+
+            #right {
+                height: 95%;
+                width: 27%;
+                /* border: 1px solid black; */
+                background-color: #f3f2f0;
+                padding: 10px;
+                display: block;
+            }
+
+            #right1 {
+                height: 400px;
+                width: 250px;
+                background-color: white;
+                /* border: 1px solid black; */
+
+            }
+
+            #right1under {
+                padding: 10px;
+            }
+
+            #right1under1 {
+                margin-top: 10px;
+            }
+
+            #right2 {
+                height: 100px;
+                width: 246px;
+                /* border: 1px solid black; */
+                padding: 10px;
+                margin: 5px;
+                background-color: white;
+
+
+
+            }
+
+            #right3 {
+                height: 100px;
+                width: 100px;
+                margin: 10px;
+                padding: 10px;
+                gap: 5px;
+
+
+
+            }
+
+            #footerright {
+
+
+                width: 250px;
+                height: 150px;
+                /* border: 1px solid black; */
+
+            }
+
+            #rightspan {
+                margin: 7px;
+                color: grey;
+                text-align: center;
+            }
+
+            #headerlowe {
+                display: none;
+            }
+
+            #info {
+                display: none;
+            }
+
+            #headerlowerlaptop {
+                display: none;
+            }
+
+            #infolaptop {
+                display: none;
+            }
+
+            #selfname {
+                display: none;
+            }
+
+            #postmobile {
+                display: none;
+            }
+
+            #postmobile1 {
+                display: none;
+            }
+
+            #postmobile2 {
+                display: none;
+            }
+
+            #middelsecoundmobile {
+                display: none;
+            }
+
+            #middelsecound1mobile {
+                display: none;
+            }
+
+            #middelsecound2mobile {
+                display: none;
+            }
+
+            #middelsecoundcogratsmobile {
+                display: none;
+            }
+
+            #right1mobile {
+                display: none;
+            }
+
+            #right1undermobile {
+                display: none;
+            }
+
+            #right2mobile {
+                display: none;
+            }
+
+            #right3mobile {
+                display: none;
+            }
+
+            #footerrightmobile {
+                display: none;
+            }
+
+            #rightspanmobile {
+                display: none;
+            }
+
+
+
+        }
+    </style>
+</head>
+
+<body>
+    <div id="main">
+        <div id="header">
+            <div id="logo">
+                <img src="https://static.vecteezy.com/system/resources/previews/021/460/490/original/linkedin-logo-free-download-free-png.png"
+                    alt=""
+                    style="width:70px; height:70px; display: flex; justify-content: center; align-items: center;">
+
+                <div id="mobilesearchicom">
+                    <img src="https://static.vecteezy.com/system/resources/previews/021/460/490/original/linkedin-logo-free-download-free-png.png"
+                        alt=""
+                        style="width:70px; height:70px; display: flex; justify-content: center; align-items: center;">
+                </div>
+
+                <div id="searchmobile">
+                    <img src="./search_24dp_000000_FILL1_wght400_GRAD0_opsz24.svg">
+                    <input type="text" placeholder="search" style="border: none;">
+                </div>
+            </div>
+            <div id="search">
+                <img src="./search_24dp_000000_FILL1_wght400_GRAD0_opsz24.svg">
+
+            </div>
+            <div id="home">
+                <img src="./home_24dp_000000_FILL1_wght400_GRAD0_opsz24.svg" alt="">
+
+            </div>
+            <div id="homemobile">
+                <img src="./home_24dp_000000_FILL1_wght400_GRAD0_opsz24.svg" alt="">
+                <a href="./homepage.html" style="color: black; text-decoration: none; "> home</a>
+            </div>
+            <div id="network">
+                <img src="./diversity_3_24dp_000000_FILL1_wght400_GRAD0_opsz24.svg" alt="">
+            </div>
+            <div id="networkmobile">
+                <img src="./diversity_3_24dp_000000_FILL1_wght400_GRAD0_opsz24.svg" alt="">
+                <p> network</p>
+            </div>
+            <div id="job">
+                <img src="./business_center_24dp_000000_FILL1_wght400_GRAD0_opsz24.svg" alt="">
+            </div>
+            <div id="jobmobile">
+                <img src="./business_center_24dp_000000_FILL1_wght400_GRAD0_opsz24.svg" alt="">
+                <p>job</p>
+            </div>
+            <div id="masage">
+                <img src="./sms_24dp_000000_FILL1_wght400_GRAD0_opsz24.svg" alt="">
+            </div>
+            <div id="masagemobile">
+                <img src="./sms_24dp_000000_FILL1_wght400_GRAD0_opsz24.svg" alt="">
+                <p>messaging</p>
+            </div>
+            <div id="notification">
+                <img src="./circle_notifications_24dp_000000_FILL1_wght400_GRAD0_opsz24 (1).svg" alt="">
+            </div>
+            <div id="notificationmobile">
+                <img src="./circle_notifications_24dp_000000_FILL1_wght400_GRAD0_opsz24 (1).svg" alt="">
+                <p>notification</p>
+            </div>
+            <div id="about">
+                <img src="./menu_24dp_000000_FILL1_wght400_GRAD0_opsz24 (1).svg" alt="">
+            </div>
+            <div id="aboutmobile">
+                <img src="./menu_24dp_000000_FILL1_wght400_GRAD0_opsz24 (1).svg" alt="">
+                <p>about</p>
+            </div>
+            <div id="forbusiness">
+                <img src="./apps_24dp_000000_FILL1_wght400_GRAD0_opsz24.svg" alt="">
+            </div>
+            <div id="forbusinessmobile">
+                <img src="./apps_24dp_000000_FILL1_wght400_GRAD0_opsz24.svg" alt="">
+                <p>business</p>
+
+            </div>
+        </div>
+        <div id="imr">
+            <div id="left">
+                <div id="leftfirst">
+                    <div id="leftfirst1">
+                        <img id="leftfirst1img"
+                            src="https://wallpapers.com/images/featured/most-beautiful-nature-hdb30wtkjbn08xlf.jpg"
+                            alt="">
+                    </div>
+                    <div id="leftfirst2">
+                        <h2 id="leftfirstinfo">Sahil joshi</h2>
+                        <p style="font-size: 13px; margin-bottom: 5px;">Attended Mumbai Education Trust,MET Language Of
+                            Collage<span style="color: grey;">Mumbai,Maharashtra</span> </p>
+                        <h3>Student</h3>
+                    </div>
+
+                </div>
+                <div id="leftsecound">
+                    <div id="leftsecound1">
+                        <h5>Profile viewers</h5>
+                        <p>0</p>
+                    </div>
+                    <div id="leftsecound1">
+                        <h5>Post impression</h5>
+                        <p>0</p>
+                    </div>
+                </div>
+                <div id="leftthird">
+                    <div id="leftthirdfirst">
+                        <img src="./bookmark_24dp_000000_FILL1_wght400_GRAD0_opsz24.svg" alt="">
+                        <p id="leftthirdfirst1">Save item</p>
+                    </div>
+                    <div id="leftthirdfirst">
+                        <img src="./groups_2_24dp_000000_FILL1_wght400_GRAD0_opsz24.svg" alt="">
+                        <p id="leftthirdfirst1"> groups</p>
+                    </div>
+                    <div id="leftthirdfirst">
+                        <img src="./news_24dp_000000_FILL1_wght400_GRAD0_opsz24 (1).svg" alt="">
+                        <p id="leftthirdfirst1">Newsletters</p>
+                    </div>
+                    <div id="leftthirdfirst">
+                        <img src="./newsmode_24dp_000000_FILL1_wght400_GRAD0_opsz24.svg" alt="">
+                        <p id="leftthirdfirst1"> Events</p>
+                    </div>
+                </div>
+            </div>
+            <div id="middel">
+                <div id="post">
+                    <div id="post1">
+                        <img src="https://wallpapers.com/images/featured/most-beautiful-nature-hdb30wtkjbn08xlf.jpg"
+                            alt="" style="border-radius: 50%; height: 40px; width: 40px; margin-right: 5px;">
+                        <input type="text" placeholder="Start a post"
+                            style="border: none; border: 1px solid black; width: 90%; height: 40px; border-radius: 30px;">
+                    </div>
+                    <div id="post2">
+                        <p id="postspan"> video</p>
+                        <p id="postspan">Photo</p>
+                        <p id="postspan">Write artical</p>
+                    </div>
+                </div>
+                <hr>
+                <br>
+                <div id="middelsecound">
+                    <p>Shubham Totala’s job update</p>
+                    <div id="middelsecound1">
+                        <div style="display: flex;justify-content: center;margin-top: 10px;">
+                            <img src="https://wallpapers.com/images/featured/most-beautiful-nature-hdb30wtkjbn08xlf.jpg"
+                                alt=""
+                                style="border-radius: 50%; height: 60px; width: 60px; margin-right: 5px; display: flex; justify-content: center;">
+
+                        </div>
+                        <div style="text-align: center;">
+                            <h3>Shubham completed 2 years </h3><br>
+                            <span style="color: blue;">Brick and Bolt</span>
+                        </div>
+                    </div>
+                    <hr>
+                    <br>
+                    <div style="padding-left: 10px; display: flex; justify-content: space-around; align-items: center;">
+                        <h5 style="display: flex; align-items: center;"><img
+                                src="./thumb_up_24dp_000000_FILL1_wght400_GRAD0_opsz24.svg" alt="">Like</h5>
+
+                        <h5> 100 comment</h5>
+                    </div>
+                    <div id="middelsecound2">
+                        <div id="middelsecoundcograts"> Congrats  <img
+                                src="./celebration_24dp_000000_FILL1_wght400_GRAD0_opsz24.svg" alt="">
+                        </div>
+                        <div id="middelsecoundcograts"> Congratulation
+                        </div>
+                        <div id="middelsecoundcograts"><img
+                                src="./celebration_24dp_000000_FILL1_wght400_GRAD0_opsz24.svg" alt="">
+                            <img src="./celebration_24dp_000000_FILL1_wght400_GRAD0_opsz24.svg" alt="">
+                            <img src="./celebration_24dp_000000_FILL1_wght400_GRAD0_opsz24.svg" alt="">
+                           
+                            
+                        </div>
+                    </div>
+
+                </div>
+                <div id="middelsecound">
+                    <p>Shubham Totala’s job update</p>
+                    <div id="middelsecound1">
+                        <div style="display: flex;justify-content: center;margin-top: 10px;">
+                            <img src="https://wallpapers.com/images/featured/most-beautiful-nature-hdb30wtkjbn08xlf.jpg"
+                                alt=""
+                                style="border-radius: 50%; height: 60px; width: 60px; margin-right: 5px; display: flex; justify-content: center;">
+
+                        </div>
+                        <div style="text-align: center;">
+                            <h3>Shubham completed 2 years </h3><br>
+                            <span style="color: blue;">Brick and Bolt</span>
+                        </div>
+                    </div>
+                    <hr>
+                    <br>
+                    <div style="padding-left: 10px; display: flex; justify-content: space-around; align-items: center;">
+                        <h5 style="display: flex; align-items: center;"><img
+                                src="./thumb_up_24dp_000000_FILL1_wght400_GRAD0_opsz24.svg" alt="">Like</h5>
+
+                        <h5> 100 comment</h5>
+                    </div>
+                    <div id="middelsecound2">
+                        <div id="middelsecoundcograts"> Congrats <img
+                                src="./celebration_24dp_000000_FILL1_wght400_GRAD0_opsz24.svg" alt="">
+                        </div>
+                        <div id="middelsecoundcograts"> Congratulation
+                        </div>
+                        <div id="middelsecoundcograts"><img
+                                src="./celebration_24dp_000000_FILL1_wght400_GRAD0_opsz24.svg" alt="">
+                            <img src="./celebration_24dp_000000_FILL1_wght400_GRAD0_opsz24.svg" alt="">
+                            <img src="./celebration_24dp_000000_FILL1_wght400_GRAD0_opsz24.svg" alt="">
+                           
+                           
+                        </div>
+                    </div>
+
+                </div>
+                <div id="middelsecound">
+                    <p>Shubham Totala’s job update</p>
+                    <div id="middelsecound1">
+                        <div style="display: flex;justify-content: center;margin-top: 10px;">
+                            <img src="https://wallpapers.com/images/featured/most-beautiful-nature-hdb30wtkjbn08xlf.jpg"
+                                alt=""
+                                style="border-radius: 50%; height: 60px; width: 60px; margin-right: 5px; display: flex; justify-content: center;">
+
+                        </div>
+                        <div style="text-align: center;">
+                            <h3>Shubham completed 2 years </h3><br>
+                            <span style="color: blue;">Brick and Bolt</span>
+                        </div>
+                    </div>
+                    <hr>
+                    <br>
+                    <div style="padding-left: 10px; display: flex; justify-content: space-around; align-items: center;">
+                        <h5 style="display: flex; align-items: center;"><img
+                                src="./thumb_up_24dp_000000_FILL1_wght400_GRAD0_opsz24.svg" alt="">Like</h5>
+
+                        <h5> 100 comment</h5>
+                    </div>
+                    <div id="middelsecound2">
+                        <div id="middelsecoundcograts"> Congrats <img
+                                src="./celebration_24dp_000000_FILL1_wght400_GRAD0_opsz24.svg" alt="">
+                        </div>
+                        <div id="middelsecoundcograts"> Congratulation
+                        </div>
+                        <div id="middelsecoundcograts"><img
+                                src="./celebration_24dp_000000_FILL1_wght400_GRAD0_opsz24.svg" alt="">
+                            <img src="./celebration_24dp_000000_FILL1_wght400_GRAD0_opsz24.svg" alt="">
+                            <img src="./celebration_24dp_000000_FILL1_wght400_GRAD0_opsz24.svg" alt="">
+                            
+                            
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div id="right">
+                <div id="right1">
+                    <div id="right1under">
+                        <h2>LinkDin News</h2>
+                        <h4 style="color: gray; margin-top: 5px;">Top Storys</h4>
+                        <h5 id="right1under1">Private Equity eyes tech deals</h5>
+                        <p style="font-size: 10px; color: gray;">1d ago 2,000 readers</p>
+                        <h5 id="right1under1">Indian varsities shine on global list</h5>
+                        <p style="font-size: 10px; color: gray;">9h ago 1,000 readers</p>
+                        <h5 id="right1under1">More Indians tune into smart TVs</h5>
+                        <p style="font-size: 10px; color: gray;">10h ago 7,000 readers</p>
+                        <h5 id="right1under1">Motorsports ready to rev up</h5>
+                        <p style="font-size: 10px; color: gray;">11h ago 1,000 readers</p>
+                        <h5 id="right1under1">Auto firms accelerate hydrogen play</h5>
+                        <p style="font-size: 10px; color: gray;">19h ago 98,000 readers</p>
+                        <h5 id="right1under1">Big Four goes big on hiring</h5>
+                        <p style="font-size: 10px; color: gray;">20h ago 4,000 readers</p>
+                        <h5 id="right1under1">More recruiters get AI savvy</h5>
+                        <p style="font-size: 10px; color: gray;">19h ago 1,000 readers</p>
+                        <h5 id="right1under1">Pay gap widens in IT</h5>
+                        <p style="font-size: 10px; color: gray;">19h ago 56,000 readers</p>
+                    </div>
+                </div>
+                <div id="right2">
+                    <h2> Try LinkDin on the windows app</h2>
+                </div>
+                <div id="right3">
+                    <footer id="footerright">
+                        <span id="rightspan">About</span>
+                        <span id="rightspan">Accessability</span>
+                        <span id="rightspan">Help center</span>
+                        <span id="rightspan">Privacy & Terms</span>
+                        <span id="rightspan">Ad choice</span>
+                        <span id="rightspan">Advertising</span>
+                        <span id="rightspan">Business</span>
+                        <span id="rightspan">Services</span>
+                        <span id="rightspan">Get the LinkDin app</span>
+                        <span id="rightspan">More</span>
+                    </footer>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <div id="headerlower">
+            <img src="https://wallpapers.com/images/featured/most-beautiful-nature-hdb30wtkjbn08xlf.jpg" alt=""
+                id="selfimg">
+        </div>
+        <div id="info">
+            <h2 id="selfname">Sahil joshi</h2>
+            <p style="font-size: 15px; margin-bottom: 5px; background-color: white;">Attended Mumbai Education Trust,MET
+                Language Of Collage<span style="color: grey; background-color: white;">Mumbai,Maharashtra</span> </p>
+            <h3>Student</h3>
+        </div>
+        <div id="headerlowerlaptop">
+            <img src="https://wallpapers.com/images/featured/most-beautiful-nature-hdb30wtkjbn08xlf.jpg" alt=""
+                style="border-radius: 50%; height: 70px; width: 70px; margin-top: 30px; margin-left: 15px;">
+        </div>
+        <div id="infolaptop">
+            <h2 id="selfname">Sahil joshi</h2>
+            <p style="font-size: 15px; margin-bottom: 5px;">Attended Mumbai Education Trust,MET Language Of Collage<span
+                    style="color: grey;">Mumbai,Maharashtra</span> </p>
+            <h3>Student</h3>
+        </div>
+        <div id="seemore">
+            <p>See more</p>
+        </div>
+        <div id="postmobile">
+            <div id="postmobile1">
+                <img src="https://wallpapers.com/images/featured/most-beautiful-nature-hdb30wtkjbn08xlf.jpg" alt=""
+                    style="border-radius: 50%; height: 40px; width: 40px; margin-right: 5px;">
+                <input type="text" placeholder="Start a post"
+                    style="border: none; border: 1px solid black; width: 90%; height: 40px; border-radius: 30px;">
+            </div>
+            <div id="postmobile2">
+                <p id="postspan"> video</p>
+                <p id="postspan">Photo</p>
+                <p id="postspan">Write artical</p>
+            </div>
+        </div>
+        <hr>
+        <br>
+        <div id="middelsecoundmobile">
+            <p>Shubham Totala’s job update</p>
+            <div id="middelsecound1mobile">
+                <div style="display: flex;justify-content: center;margin-top: 10px;">
+                    <img src="https://wallpapers.com/images/featured/most-beautiful-nature-hdb30wtkjbn08xlf.jpg" alt=""
+                        style="border-radius: 50%; height: 60px; width: 60px; margin-right: 5px; display: flex; justify-content: center;">
+
+                </div>
+                <div style="text-align: center;">
+                    <h3>Shubham completed 2 years </h3><br>
+                    <span style="color: blue;">Brick and Bolt</span>
+                </div>
+            </div>
+            <hr>
+
+            <div style="padding-left: 10px; display: flex; justify-content: space-around; align-items: center;">
+                <h5 style="display: flex; align-items: center;"><img
+                        src="./thumb_up_24dp_000000_FILL1_wght400_GRAD0_opsz24.svg" alt="">Like</h5>
+
+                <h5> 100 comment</h5>
+            </div>
+            <div id="middelsecound2mobile">
+                <div id="middelsecoundcogratsmobile"> Congrats Shubham <img
+                        src="./celebration_24dp_000000_FILL1_wght400_GRAD0_opsz24.svg" alt="">
+                </div>
+                <div id="middelsecoundcogratsmobile"> Congratulation<img
+                        src="./celebration_24dp_000000_FILL1_wght400_GRAD0_opsz24.svg" alt="">
+                </div>
+
+            </div>
+            <div id="middelsecoundmobile">
+                <p>Shubham Totala’s job update</p>
+                <div id="middelsecound1mobile">
+                    <div style="display: flex;justify-content: center;margin-top: 10px;">
+                        <img src="https://wallpapers.com/images/featured/most-beautiful-nature-hdb30wtkjbn08xlf.jpg"
+                            alt=""
+                            style="border-radius: 50%; height: 60px; width: 60px; margin-right: 5px; display: flex; justify-content: center;">
+
+                    </div>
+                    <div style="text-align: center;">
+                        <h3>Shubham completed 2 years </h3><br>
+                        <span style="color: blue;">Brick and Bolt</span>
+                    </div>
+                </div>
+                <hr>
+
+                <div style="padding-left: 10px; display: flex; justify-content: space-around; align-items: center;">
+                    <h5 style="display: flex; align-items: center;"><img
+                            src="./thumb_up_24dp_000000_FILL1_wght400_GRAD0_opsz24.svg" alt="">Like</h5>
+
+                    <h5> 100 comment</h5>
+                </div>
+                <div id="middelsecound2mobile">
+                    <div id="middelsecoundcogratsmobile"> Congrats <img
+                            src="./celebration_24dp_000000_FILL1_wght400_GRAD0_opsz24.svg" alt="">
+                    </div>
+                    <div id="middelsecoundcogratsmobile"> Congratulation<img
+                            src="./celebration_24dp_000000_FILL1_wght400_GRAD0_opsz24.svg" alt="">
+                    </div>
+
+                </div>
+                <br>
+                <div id="middelsecoundmobile">
+                    <p>Shubham Totala’s job update</p>
+                    <div id="middelsecound1mobile">
+                        <div style="display: flex;justify-content: center;margin-top: 10px;">
+                            <img src="https://wallpapers.com/images/featured/most-beautiful-nature-hdb30wtkjbn08xlf.jpg"
+                                alt=""
+                                style="border-radius: 50%; height: 60px; width: 60px; margin-right: 5px; display: flex; justify-content: center;">
+
+                        </div>
+                        <div style="text-align: center;">
+                            <h3>Shubham completed 2 years </h3><br>
+                            <span style="color: blue;">Brick and Bolt</span>
+                        </div>
+                    </div>
+                    <hr>
+
+                    <div style="padding-left: 10px; display: flex; justify-content: space-around; align-items: center;">
+                        <h5 style="display: flex; align-items: center;"><img
+                                src="./thumb_up_24dp_000000_FILL1_wght400_GRAD0_opsz24.svg" alt="">Like</h5>
+
+                        <h5> 100 comment</h5>
+                    </div>
+                    <div id="middelsecound2mobile">
+                        <div id="middelsecoundcogratsmobile"> Congrats <img
+                                src="./celebration_24dp_000000_FILL1_wght400_GRAD0_opsz24.svg" alt="">
+                        </div>
+                        <div id="middelsecoundcogratsmobile"> Congratulation<img
+                                src="./celebration_24dp_000000_FILL1_wght400_GRAD0_opsz24.svg" alt="">
+                        </div>
+
+                    </div>
+                    <br>
+                    <div id="right1mobile">
+                        <div id="right1undermobile">
+                            <h1>LinkDin News</h1>
+                            <h4 style="color: gray; margin-top: 5px;">Top Storys</h4><br>
+                            <h5 id="right1under1mobile">Private Equity eyes tech deals</h5>
+                            <p style="font-size: 10px; color: gray;">1d ago 2,000 readers</p>
+                            <h5 id="right1under1mobile">Indian varsities shine on global list</h5>
+                            <p style="font-size: 10px; color: gray;">9h ago 1,000 readers</p>
+                            <h5 id="right1under1mobile">More Indians tune into smart TVs</h5>
+                            <p style="font-size: 10px; color: gray;">10h ago 7,000 readers</p>
+                            <h5 id="right1under1mobile">Motorsports ready to rev up</h5>
+                            <p style="font-size: 10px; color: gray;">11h ago 1,000 readers</p>
+                            <h5 id="right1under1mobile">Auto firms accelerate hydrogen play</h5>
+                            <p style="font-size: 10px; color: gray;">19h ago 98,000 readers</p>
+                            <h5 id="right1under1mobile">Big Four goes big on hiring</h5>
+                            <p style="font-size: 10px; color: gray;">20h ago 4,000 readers</p>
+                            <h5 id="right1under1mobile">More recruiters get AI savvy</h5>
+                            <p style="font-size: 10px; color: gray;">19h ago 1,000 readers</p>
+                            <h5 id="right1under1mobile">Pay gap widens in IT</h5>
+                            <p style="font-size: 10px; color: gray;">19h ago 56,000 readers</p>
+                        </div>
+                    </div>
+                    <br>
+                    <div id="right2mobile">
+                        <h2> Try LinkDin on the windows app</h2>
+                    </div>
+                    <div id="right3mobile">
+                        <footer id="footerrightmobile">
+                            <span id="rightspanmobile">About</span>
+                            <span id="rightspanmobile">Accessability</span>
+                            <span id="rightspanmobile">Help center</span><br>
+                            <br>
+                            <span id="rightspanmobile">Privacy & Terms</span>
+                            <span id="rightspanmobile">Ad choice</span>
+                            <span id="rightspanmobile">Advertising</span><br>
+                            <br>
+                            <span id="rightspanmobile">Business</span>
+                            <span id="rightspanmobile">Services</span>
+                            <span id="rightspanmobile">Get the LinkDin app</span>
+                            <span id="rightspanmobile">More</span>
+                        </footer>
+                    </div>
+                    <img src="https://th.bing.com/th/id/R.ef2f3c0ea2d1116f00a5bc56b8c066ce?rik=GYaDoFewrbjMYA&riu=http%3a%2f%2f1000marcas.net%2fwp-content%2fuploads%2f2020%2f01%2fLogo-Linkedin.png&ehk=S4bpGdTYO0hvPM28u%2bFMX4ma7sBWXFdx85iEGZWSx1I%3d&risl=&pid=ImgRaw&r=0"
+                alt="" style="height: 50px; width: 70px;">
+                </div>
+            </div>
+</body>
+
+</html>
