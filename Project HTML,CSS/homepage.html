@@ -37,6 +37,13 @@
 
         }
 
+        #headerleft {
+            display: none;
+        }
+        #headerright{
+            display: none;
+        }
+
         #logo {
             width: 10%;
             height: 70%;
@@ -316,9 +323,10 @@
             display: flex;
             margin-top: 70px;
         }
-        #footerrightmobile{
-           text-align: center;
-           
+
+        #footerrightmobile {
+            text-align: center;
+
         }
 
 
@@ -331,7 +339,7 @@
                 width: 98%;
                 margin-left: 20px;
                 margin-right: 20px;
-                margin-top: 30px;
+                margin-top: 1px;
                 background-color: #f4f2ee;
             }
 
@@ -341,11 +349,28 @@
                 /* border: 1px solid black; */
                 display: flex;
                 position: fixed;
-                justify-content: space-between;
+                justify-content: space-around;
                 background-color: #ffffff;
 
                 align-items: center;
 
+            }
+
+            #headerleft {
+                height: 50px;
+                width: 30%;
+                border: 1px solid black;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+            #headerright{
+                height: 50px;
+                width: 60%;
+                /* border: 1px solid black; */
+                display: flex;
+                align-items: ;
+                justify-content: start;
             }
 
             #search {
@@ -357,7 +382,7 @@
                 display: flex;
                 border: 1px solid black;
                 height: 30px;
-                width: 290px;
+                width: 400px;
                 align-items: center;
                 border-radius: 20px;
                 margin-left: 10px;
@@ -372,7 +397,7 @@
                 /* border: 1px solid black; */
                 height: 50px;
                 width: 50px;
-                padding-left: 30px;
+                padding-left: 10px;
             }
 
             #home {
@@ -385,7 +410,7 @@
                 height: 98%;
                 /* border: 1px solid black; */
                 align-items: center;
-                margin-left: 100px;
+                margin-left: 10px;
                 margin-bottom: 25px;
                 text-align: center;
             }
@@ -400,7 +425,7 @@
                 height: 98%;
                 /* border: 1px solid black; */
                 align-items: center;
-                margin-left: 100px;
+                margin-left: 50px;
                 margin-bottom: 25px;
                 text-align: center;
                 justify-content: center;
@@ -416,7 +441,7 @@
                 height: 98%;
                 /* border: 1px solid black; */
                 align-items: center;
-                margin-left: 100px;
+                margin-left: 50px;
                 margin-bottom: 25px;
                 text-align: center;
             }
@@ -431,7 +456,7 @@
                 height: 98%;
                 /* border: 1px solid black; */
                 align-items: center;
-                margin-left: 100px;
+                margin-left: 50px;
                 margin-bottom: 25px;
                 text-align: center;
             }
@@ -446,7 +471,7 @@
                 height: 98%;
                 /* border: 1px solid black; */
                 align-items: center;
-                margin-left: 100px;
+                margin-left: 50px;
                 margin-bottom: 25px;
                 text-align: center;
             }
@@ -461,7 +486,7 @@
                 height: 98%;
                 /* border: 1px solid black; */
                 align-items: center;
-                margin-left: 100px;
+                margin-left: 50px;
                 margin-bottom: 25px;
                 text-align: center;
 
@@ -477,7 +502,7 @@
                 height: 98%;
                 /* border: 1px solid black; */
                 align-items: center;
-                margin-left: 50px;
+                margin-left: 40px;
                 margin-right: 30px;
                 margin-bottom: 25px;
                 text-align: center;
@@ -840,76 +865,78 @@
 <body>
     <div id="main">
         <div id="header">
-            <div id="logo">
-                <img src="https://static.vecteezy.com/system/resources/previews/021/460/490/original/linkedin-logo-free-download-free-png.png"
-                    alt=""
-                    style="width:70px; height:70px; display: flex; justify-content: center; align-items: center;">
-
-                <div id="mobilesearchicom">
-                    <img src="https://static.vecteezy.com/system/resources/previews/021/460/490/original/linkedin-logo-free-download-free-png.png"
+            <div id="headerleft">
+                <div id="logo">
+                    <!-- <img src="https://static.vecteezy.com/system/resources/previews/021/460/490/original/linkedin-logo-free-download-free-png.png"
                         alt=""
-                        style="width:70px; height:70px; display: flex; justify-content: center; align-items: center;">
-                </div>
+                        style="width:70px; height:70px; display: flex; justify-content: center; align-items: center;"> -->
 
-                <div id="searchmobile">
+                    <div id="mobilesearchicom">
+                        <img src="https://static.vecteezy.com/system/resources/previews/021/460/490/original/linkedin-logo-free-download-free-png.png"
+                            alt=""
+                            style="width:70px; height:70px; display: flex; justify-content: center; align-items: center;">
+                    </div>
+
+                    <div id="searchmobile">
+                        <img src="./search_24dp_000000_FILL1_wght400_GRAD0_opsz24.svg">
+                        <input type="text" placeholder="search" style="border: none; width: 250px; outline: none; box-shadow: none; ">
+                    </div>
+                </div>
+                <div id="search">
                     <img src="./search_24dp_000000_FILL1_wght400_GRAD0_opsz24.svg">
-                    <input type="text" placeholder="search" style="border: none;">
                 </div>
             </div>
-            <div id="search">
-                <img src="./search_24dp_000000_FILL1_wght400_GRAD0_opsz24.svg">
+            <div id="headerright">
+                <div id="home">
+                    <img src="./home_24dp_000000_FILL1_wght400_GRAD0_opsz24.svg" alt="">
 
-            </div>
-            <div id="home">
-                <img src="./home_24dp_000000_FILL1_wght400_GRAD0_opsz24.svg" alt="">
-
-            </div>
-            <div id="homemobile">
-                <img src="./home_24dp_000000_FILL1_wght400_GRAD0_opsz24.svg" alt="">
-                <a href="./homepage.html" style="color: black; text-decoration: none; "> home</a>
-            </div>
-            <div id="network">
-                <img src="./diversity_3_24dp_000000_FILL1_wght400_GRAD0_opsz24.svg" alt="">
-            </div>
-            <div id="networkmobile">
-                <img src="./diversity_3_24dp_000000_FILL1_wght400_GRAD0_opsz24.svg" alt="">
-                <p> network</p>
-            </div>
-            <div id="job">
-                <img src="./business_center_24dp_000000_FILL1_wght400_GRAD0_opsz24.svg" alt="">
-            </div>
-            <div id="jobmobile">
-                <img src="./business_center_24dp_000000_FILL1_wght400_GRAD0_opsz24.svg" alt="">
-                <p>job</p>
-            </div>
-            <div id="masage">
-                <img src="./sms_24dp_000000_FILL1_wght400_GRAD0_opsz24.svg" alt="">
-            </div>
-            <div id="masagemobile">
-                <img src="./sms_24dp_000000_FILL1_wght400_GRAD0_opsz24.svg" alt="">
-                <p>messaging</p>
-            </div>
-            <div id="notification">
-                <img src="./circle_notifications_24dp_000000_FILL1_wght400_GRAD0_opsz24 (1).svg" alt="">
-            </div>
-            <div id="notificationmobile">
-                <img src="./circle_notifications_24dp_000000_FILL1_wght400_GRAD0_opsz24 (1).svg" alt="">
-                <p>notification</p>
-            </div>
-            <div id="about">
-                <img src="./menu_24dp_000000_FILL1_wght400_GRAD0_opsz24 (1).svg" alt="">
-            </div>
-            <div id="aboutmobile">
-                <img src="./menu_24dp_000000_FILL1_wght400_GRAD0_opsz24 (1).svg" alt="">
-                <p>about</p>
-            </div>
-            <div id="forbusiness">
-                <img src="./apps_24dp_000000_FILL1_wght400_GRAD0_opsz24.svg" alt="">
-            </div>
-            <div id="forbusinessmobile">
-                <img src="./apps_24dp_000000_FILL1_wght400_GRAD0_opsz24.svg" alt="">
-                <p>business</p>
-
+                </div>
+                <div id="homemobile">
+                    <img src="./home_24dp_000000_FILL1_wght400_GRAD0_opsz24.svg" alt="">
+                    <a href="./homepage.html" style="color: black; text-decoration: none; "> home</a>
+                </div>
+                <div id="network">
+                    <img src="./diversity_3_24dp_000000_FILL1_wght400_GRAD0_opsz24.svg" alt="">
+                </div>
+                <div id="networkmobile">
+                    <img src="./diversity_3_24dp_000000_FILL1_wght400_GRAD0_opsz24.svg" alt="">
+                    <p> network</p>
+                </div>
+                <div id="job">
+                    <img src="./business_center_24dp_000000_FILL1_wght400_GRAD0_opsz24.svg" alt="">
+                </div>
+                <div id="jobmobile">
+                    <img src="./business_center_24dp_000000_FILL1_wght400_GRAD0_opsz24.svg" alt="">
+                    <p>job</p>
+                </div>
+                <div id="masage">
+                    <img src="./sms_24dp_000000_FILL1_wght400_GRAD0_opsz24.svg" alt="">
+                </div>
+                <div id="masagemobile">
+                    <img src="./sms_24dp_000000_FILL1_wght400_GRAD0_opsz24.svg" alt="">
+                    <p>messaging</p>
+                </div>
+                <div id="notification">
+                    <img src="./circle_notifications_24dp_000000_FILL1_wght400_GRAD0_opsz24 (1).svg" alt="">
+                </div>
+                <div id="notificationmobile">
+                    <img src="./circle_notifications_24dp_000000_FILL1_wght400_GRAD0_opsz24 (1).svg" alt="">
+                    <p>notification</p>
+                </div>
+                <div id="about">
+                    <img src="./menu_24dp_000000_FILL1_wght400_GRAD0_opsz24 (1).svg" alt="">
+                </div>
+                <div id="aboutmobile">
+                    <img src="./menu_24dp_000000_FILL1_wght400_GRAD0_opsz24 (1).svg" alt="">
+                    <p>about</p>
+                </div>
+                <div id="forbusiness">
+                    <img src="./apps_24dp_000000_FILL1_wght400_GRAD0_opsz24.svg" alt="">
+                </div>
+                <div id="forbusinessmobile">
+                    <img src="./apps_24dp_000000_FILL1_wght400_GRAD0_opsz24.svg" alt="">
+                    <p>business</p>
+                </div>
             </div>
         </div>
         <div id="imr">
@@ -996,7 +1023,7 @@
                         <h5> 100 comment</h5>
                     </div>
                     <div id="middelsecound2">
-                        <div id="middelsecoundcograts"> Congrats  <img
+                        <div id="middelsecoundcograts"> Congrats <img
                                 src="./celebration_24dp_000000_FILL1_wght400_GRAD0_opsz24.svg" alt="">
                         </div>
                         <div id="middelsecoundcograts"> Congratulation
@@ -1005,8 +1032,8 @@
                                 src="./celebration_24dp_000000_FILL1_wght400_GRAD0_opsz24.svg" alt="">
                             <img src="./celebration_24dp_000000_FILL1_wght400_GRAD0_opsz24.svg" alt="">
                             <img src="./celebration_24dp_000000_FILL1_wght400_GRAD0_opsz24.svg" alt="">
-                           
-                            
+
+
                         </div>
                     </div>
 
@@ -1043,8 +1070,8 @@
                                 src="./celebration_24dp_000000_FILL1_wght400_GRAD0_opsz24.svg" alt="">
                             <img src="./celebration_24dp_000000_FILL1_wght400_GRAD0_opsz24.svg" alt="">
                             <img src="./celebration_24dp_000000_FILL1_wght400_GRAD0_opsz24.svg" alt="">
-                           
-                           
+
+
                         </div>
                     </div>
 
@@ -1081,8 +1108,8 @@
                                 src="./celebration_24dp_000000_FILL1_wght400_GRAD0_opsz24.svg" alt="">
                             <img src="./celebration_24dp_000000_FILL1_wght400_GRAD0_opsz24.svg" alt="">
                             <img src="./celebration_24dp_000000_FILL1_wght400_GRAD0_opsz24.svg" alt="">
-                            
-                            
+
+
                         </div>
                     </div>
 
@@ -1321,7 +1348,7 @@
                         </footer>
                     </div>
                     <img src="https://th.bing.com/th/id/R.ef2f3c0ea2d1116f00a5bc56b8c066ce?rik=GYaDoFewrbjMYA&riu=http%3a%2f%2f1000marcas.net%2fwp-content%2fuploads%2f2020%2f01%2fLogo-Linkedin.png&ehk=S4bpGdTYO0hvPM28u%2bFMX4ma7sBWXFdx85iEGZWSx1I%3d&risl=&pid=ImgRaw&r=0"
-                alt="" style="height: 50px; width: 70px;">
+                        alt="" style="height: 50px; width: 70px;">
                 </div>
             </div>
 </body>
