@@ -1,0 +1,1116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job</title>
+    <style>
+        * {
+            padding: 0px;
+            margin: 0px;
+            box-sizing: border-box;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+
+        }
+
+        #main {
+            height: 2200px;
+            width: 460px;
+            /* margin: 0px 5px; */
+            margin-top: 1px;
+            /* border: 1px solid black; */
+            /* margin: 0px 26px; */
+            background-color: #f3f2f0;
+            padding: 10px;
+
+        }
+
+        #header2 {
+            width: 100%;
+            height: 5%;
+            /* border: 1px solid black; */
+            display: flex;
+            background-color: white;
+            position: fixed;
+            justify-content: space-between;
+            padding: 10px;
+
+        }
+
+        #headerleft {
+            display: none;
+        }
+
+        #headerright {
+            display: none;
+        }
+
+        #logo2 {
+            width: 10%;
+            height: 70%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 10px;
+            /* border: 1px solid black; */
+        }
+
+        #search2 {
+            width: 10%;
+            height: 70%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 10px;
+            ;
+            /* border: 1px solid black; */
+        }
+
+        #searchmobile2 {
+            display: none;
+        }
+
+        #mobilesearchicom2 {
+            display: none;
+        }
+
+        #home2 {
+            width: 10%;
+            height: 70%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 10px;
+            /* border: 1px solid black; */
+        }
+
+        #homemobile2 {
+            display: none;
+        }
+
+        #network2 {
+            width: 10%;
+            height: 70%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 10px;
+            /* border: 1px solid black; */
+        }
+
+        #job2 {
+            width: 10%;
+            height: 70%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 10px;
+            /* border: 1px solid black; */
+        }
+
+        #masage2 {
+            width: 10%;
+            height: 70%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 10px;
+            /* border: 1px solid black; */
+        }
+
+        #notification3 {
+            width: 10%;
+            height: 70%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 10px;
+            /* border: 1px solid black; */
+        }
+
+        #about3 {
+            width: 10%;
+            height: 70%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 10px;
+            /* border: 1px solid black; */
+        }
+
+        #networkmobile2 {
+            display: none;
+        }
+
+        #jobmobile2 {
+            display: none;
+        }
+
+        #masagemobile2 {
+            display: none;
+        }
+
+        #notificationmobile2 {
+            display: none;
+        }
+
+        #aboutmobile2 {
+            display: none;
+        }
+
+        #forbusinessmobile2 {
+            display: none;
+        }
+
+        #forbusiness2 {
+            display: none;
+        }
+
+
+
+
+        @media (min-width: 1024px) {
+            #main {
+                height: 2000px;
+                width: 98%;
+                margin-left: 20px;
+                margin-right: 20px;
+                margin-top: 1px;
+
+                background-color: #f4f2ee;
+            }
+
+            #header {
+                width: 100%;
+                height: 7%;
+                /* border: 1px solid black; */
+                display: flex;
+                position: fixed;
+                justify-content: space-around;
+                background-color: #ffffff;
+                text-align: center;
+                align-items: center;
+
+            }
+
+            #home {
+                display: none;
+            }
+
+            #network {
+                display: none;
+            }
+
+            #job {
+                display: none;
+            }
+
+            #masage {
+                display: none;
+            }
+
+            #notification {
+                display: none;
+            }
+
+            #about {
+                display: none;
+            }
+
+            #forbusiness {
+                display: none;
+            }
+
+            #header2 {
+                display: none;
+            }
+
+            #logo2 {
+                display: none;
+            }
+
+            #search2 {
+                display: none;
+            }
+
+            #home2 {
+                display: none;
+            }
+
+            #network2 {
+                display: none;
+            }
+
+            #job2 {
+                display: none;
+            }
+
+            #masage2 {
+                display: none;
+            }
+
+            #notification3 {
+                display: none;
+            }
+
+            #about3 {
+                display: none;
+            }
+
+            #headerleft {
+                height: 50px;
+                width: 25%;
+                /* border: 1px solid black; */
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+
+            #headerright {
+                height: 50px;
+                width: 50%;
+
+                display: flex;
+                align-items: center;
+                text-align: center;
+                justify-content: space-around;
+
+            }
+
+            #search {
+                display: none;
+            }
+
+            #searchmobile {
+                display: block;
+                display: flex;
+                border: 1px solid black;
+                height: 30px;
+                width: 400px;
+                align-items: center;
+                border-radius: 20px;
+                margin-left: 10px;
+
+            }
+
+            #mobilesearchicom {
+                display: block;
+                align-items: center;
+                display: flex;
+                justify-content: center;
+                /* border: 1px solid black; */
+                height: 50px;
+                width: 50px;
+                padding-left: 10px;
+            }
+
+            #home2 {
+                display: none;
+            }
+
+            #homemobile {
+                display: block;
+                width: 3%;
+                height: 98%;
+                /* border: 1px solid black; */
+                align-items: center;
+                justify-content: center;
+                margin-left: 10px;
+                /* margin-bottom: 25px; */
+                text-align: center;
+            }
+
+            #network2 {
+                display: none;
+            }
+
+            #networkmobile2 {
+                display: block;
+                width: 5%;
+                height: 98%;
+                /* border: 1px solid black; */
+                align-items: center;
+                margin-left: 50px;
+                margin-bottom: 25px;
+                text-align: center;
+                justify-content: center;
+            }
+
+            #networkmobile {
+                /* text-align: center; */
+                width: 30px;
+                margin-right: 20px;
+                margin-left: 20px;
+                /* border: 1px solid black; */
+            }
+
+            #job2 {
+                display: none;
+            }
+
+            #jobmobile2 {
+                display: block;
+                width: 5%;
+                height: 98%;
+                /* border: 1px solid black; */
+                align-items: center;
+                margin-left: 50px;
+                margin-bottom: 25px;
+                text-align: center;
+            }
+
+            #masage2 {
+                display: none;
+            }
+
+            #masagemobile2 {
+                display: block;
+                width: 5%;
+                height: 98%;
+                /* border: 1px solid black; */
+                align-items: center;
+                margin-left: 50px;
+                margin-bottom: 25px;
+                text-align: center;
+            }
+
+            #notification2 {
+                display: none;
+            }
+
+            #notificationmobile3 {
+                display: block;
+                width: 5%;
+                height: 98%;
+                /* border: 1px solid black; */
+                align-items: center;
+                margin-left: 50px;
+                margin-bottom: 25px;
+                text-align: center;
+            }
+
+            #about3 {
+                display: none;
+            }
+
+            #aboutmobile2 {
+                display: block;
+                width: 5%;
+                height: 98%;
+                /* border: 1px solid black; */
+                align-items: center;
+                margin-left: 50px;
+                margin-bottom: 25px;
+                text-align: center;
+
+            }
+
+            #forbusiness2 {
+                display: none;
+            }
+
+            #forbusinessmobile2 {
+                display: block;
+                width: 5%;
+                height: 98%;
+                /* border: 1px solid black; */
+                align-items: center;
+                margin-left: 40px;
+                margin-right: 30px;
+                margin-bottom: 25px;
+                text-align: center;
+            }
+
+            #HeaderLower {
+                height: 1900px;
+                /* border: 1px solid black; */
+                margin: 10px;
+                padding: 10px;
+                margin-top: 60px;
+                display: flex;
+                justify-content: space-around;
+            }
+
+            #HeaderLowerLeft {
+                height: 900px;
+                width: 30%;
+                margin: 10px;
+                padding: 10px;
+                /* border: 1px solid black; */
+            }
+
+            #leftfirst {
+                /* border: 1px solid black; */
+                margin-left: 140px;
+                height: 180px;
+                width: 250px;
+                margin-top: 10px;
+                margin-right: 5px;
+                border-radius: 10px;
+                background-color: white;
+
+            }
+
+            #leftfirst1 {
+                height: 70px;
+                width: 100%;
+                background-color: #d9e5e7;
+                align-items: flex-end;
+                display: flex;
+                justify-content: center;
+                border-radius: 10px;
+            }
+
+            #leftfirst1img {
+                height: 70px;
+                width: 70px;
+                border-radius: 50%;
+            }
+
+            #leftfirst2 {
+                height: 100px;
+                width: 100%;
+                margin-left: 10px;
+            }
+
+            #HeaderLowerRight {
+                height: 2000px;
+                width: 60%;
+                margin: 10px;
+                padding: 10px;
+                /* border: 1px solid black; */
+            }
+
+            #LeftSecound {
+                height: 200px;
+                /* border: 1px solid black; */
+                border-radius: 10px;
+                background-color: white;
+                width: 65%;
+                margin-left: 135px;
+                margin-top: 10px;
+            }
+
+            #LeftSecoundUnder {
+                display: flex;
+                margin: 10px;
+                gap: 10px;
+                margin-top: 20px;
+                /* border: 1px solid black; */
+                padding: 10px;
+            }
+
+            #right3 {
+                height: 100px;
+                width: 100px;
+                margin: 10px;
+                margin-left: 130px;
+                padding: 10px;
+                gap: 5px;
+                /* border: 1px solid black; */
+
+
+
+            }
+
+            #footerright {
+
+
+                width: 250px;
+                height: 100px;
+                /* border: 1px solid black; */
+
+            }
+
+            #rightspan {
+                margin: 7px;
+                color: grey;
+                text-align: center;
+            }
+
+            #HeaderLowerRightFirst {
+                height: 150px;
+                /* border: 1px solid black; */
+                background-color: white;
+                border-radius: 10px;
+            }
+
+            #HeaderLowerRightFirstUnder {
+                height: 100px;
+                text-align: center;
+                padding: 10px;
+            }
+
+            #HeaderLowerRightFirstUnderButton {
+                display: flex;
+                justify-content: space-around;
+
+            }
+
+            #ActivelltCasuallyButton {
+                border: 1px solid blue;
+                width: 40%;
+                background-color: blue;
+                border-radius: 30px;
+                color: white;
+                padding: 5px;
+            }
+
+            #HeaderLowerRightSecound {
+                height: 450px;
+                /* border: 1px solid black; */
+                background-color: white;
+                border-radius: 10px;
+                padding: 10px;
+                margin-top: 10px;
+            }
+
+            #HeaderLowerRightSecound1 {
+                /* border: 1px solid black; */
+            }
+
+            #HeaderLowerRightSecound2 {
+                display: flex;
+                align-items: center;
+                /* border: 1px solid black; */
+                margin-top: 5px;
+                height: 100px;
+
+            }
+
+            #HeaderLowerRightSecound2IMG {
+                height: 50px;
+                width: 10%;
+                /* border: 1px solid black; */
+                display: flex;
+                align-items: center;
+
+            }
+
+            #HeaderLowerRightSecound2Application {
+                width: 80%;
+                /* border: 1px solid black; */
+            }
+
+            #Cross {
+                display: flex;
+                justify-content: flex-end;
+                align-items: center;
+                width: 10%;
+                padding: 5px;
+            }
+
+            #showall {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding: 20px;
+            }
+
+            #HeaderLowerRightThired {
+                height: 400px;
+                /* border: 1px solid black; */
+                padding: 10px;
+
+                border-radius: 10px;
+                margin-top: 10px;
+                background-color: white;
+
+            }
+
+            #HeaderLowerRightThired1 {
+                display: flex;
+                justify-content: space-between;
+                height: 60px;
+                /* border: 1px solid black; */
+                align-items: center;
+            }
+
+            #HeaderLowerRightThired2Parent {
+                display: flex;
+                justify-content: space-around;
+            }
+
+            #HeaderLowerRightThired2 {
+                height: 300px;
+                /* border: 1px solid black; */
+                border-radius: 10px;
+                background-color: white;
+                width: 40%;
+                margin-top: 15px;
+            }
+
+            #HeaderLowerRightThired2First {
+                height: 28%;
+            }
+
+            #HeaderLowerRightThired2Secound {
+                height: 28%;
+                padding: 10px;
+                margin: 10px;
+                margin-top: 10px;
+
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <div id="main">
+        <div id="header">
+
+            <div id="headerleft">
+
+
+
+                <div id="mobilesearchicom">
+                    <img src="https://static.vecteezy.com/system/resources/previews/021/460/490/original/linkedin-logo-free-download-free-png.png"
+                        alt=""
+                        style="width:70px; height:70px; display: flex; justify-content: center; align-items: center;">
+                </div>
+
+                <div id="searchmobile">
+                    <img src="./search_24dp_000000_FILL1_wght400_GRAD0_opsz24.svg">
+                    <input type="text" placeholder="Describe the job you want"
+                        style="border: none; width: 250px; outline: none; box-shadow: none; ">
+                </div>
+            </div>
+            <!-- <div id="search">
+                <img src="./search_24dp_000000_FILL1_wght400_GRAD0_opsz24.svg">
+            </div> -->
+
+
+            <div id="headerright">
+                <div id="home">
+                    <img src="./home_24dp_000000_FILL1_wght400_GRAD0_opsz24.svg" alt="">
+
+                </div>
+                <div id="homemobile">
+                    <img src="./home_24dp_000000_FILL1_wght400_GRAD0_opsz24.svg" alt="">
+                    <a href="./homepage.html" style="color: black; text-decoration: none; text-align: center; ">
+                        home</a>
+                </div>
+                <div id="network">
+                    <img src="./diversity_3_24dp_000000_FILL1_wght400_GRAD0_opsz24.svg" alt="">
+                </div>
+                <div id="networkmobile">
+                    <img src="./diversity_3_24dp_000000_FILL1_wght400_GRAD0_opsz24.svg" alt="">
+                    <a href="./Network.html" style="color: black; text-decoration: none; text-align: center; ">
+                        Network</a>
+                </div>
+                <div id="job">
+                    <img src="./business_center_24dp_000000_FILL1_wght400_GRAD0_opsz24.svg" alt="">
+                </div>
+                <div id="jobmobile">
+                    <img src="./business_center_24dp_000000_FILL1_wght400_GRAD0_opsz24.svg" alt="">
+                    <p>job</p>
+                </div>
+                <div id="masage">
+                    <img src="./sms_24dp_000000_FILL1_wght400_GRAD0_opsz24.svg" alt="">
+                </div>
+                <div id="masagemobile">
+                    <img src="./sms_24dp_000000_FILL1_wght400_GRAD0_opsz24.svg" alt="">
+                    <p>messaging</p>
+                </div>
+                <div id="notification">
+                    <img src="./circle_notifications_24dp_000000_FILL1_wght400_GRAD0_opsz24 (1).svg" alt="">
+                </div>
+                <div id="notificationmobile">
+                    <img src="./circle_notifications_24dp_000000_FILL1_wght400_GRAD0_opsz24 (1).svg" alt="">
+                    <p>notification</p>
+                </div>
+                <div id="about">
+                    <img src="./menu_24dp_000000_FILL1_wght400_GRAD0_opsz24 (1).svg" alt="">
+                </div>
+                <div id="aboutmobile">
+                    <img src="./menu_24dp_000000_FILL1_wght400_GRAD0_opsz24 (1).svg" alt="">
+                    <p>about</p>
+                </div>
+                <div id="forbusiness">
+                    <img src="./apps_24dp_000000_FILL1_wght400_GRAD0_opsz24.svg" alt="">
+                </div>
+                <div id="forbusinessmobile">
+                    <img src="./apps_24dp_000000_FILL1_wght400_GRAD0_opsz24.svg" alt="">
+                    <p>business</p>
+                </div>
+            </div>
+        </div>
+        <div id="header2">
+
+            <!-- <div id="headerleft"> -->
+            <div id="logo2">
+                <img src="https://th.bing.com/th/id/OIP.ocDQ_FjRiIwqT5pOFWCkZwHaEK?rs=1&pid=ImgDetMain" alt=""
+                    style="height: 30px;width: 50px;">
+            </div>
+            <div id="mobilesearchicom2">
+                <img src="https://static.vecteezy.com/system/resources/previews/021/460/490/original/linkedin-logo-free-download-free-png.png"
+                    alt=""
+                    style="width:70px; height:70px; display: flex; justify-content: center; align-items: center;">
+            </div>
+
+            <div id="searchmobile2">
+                <img src="./search_24dp_000000_FILL1_wght400_GRAD0_opsz24.svg">
+                <input type="text" placeholder="search"
+                    style="border: none; width: 250px; outline: none; box-shadow: none; ">
+            </div>
+
+            <div id="search2">
+                <img src="./search_24dp_000000_FILL1_wght400_GRAD0_opsz24.svg">
+            </div>
+            <!-- </div> -->
+
+            <!-- <div id="headerright"> -->
+            <div id="home2">
+                <img src="./home_24dp_000000_FILL1_wght400_GRAD0_opsz24.svg" alt="">
+
+            </div>
+            <div id="homemobile2">
+                <img src="./home_24dp_000000_FILL1_wght400_GRAD0_opsz24.svg" alt="">
+                <a href="./homepage.html" style="color: black; text-decoration: none; "> home</a>
+            </div>
+            <div id="network2">
+                <img src="./diversity_3_24dp_000000_FILL1_wght400_GRAD0_opsz24.svg" alt="">
+            </div>
+            <div id="networkmobile2">
+                <img src="./diversity_3_24dp_000000_FILL1_wght400_GRAD0_opsz24.svg" alt="">
+                <p> network</p>
+            </div>
+            <div id="job2">
+                <img src="./business_center_24dp_000000_FILL1_wght400_GRAD0_opsz24.svg" alt="">
+            </div>
+            <div id="jobmobile2">
+                <img src="./business_center_24dp_000000_FILL1_wght400_GRAD0_opsz24.svg" alt="">
+                <p>job</p>
+            </div>
+            <div id="masage2">
+                <img src="./sms_24dp_000000_FILL1_wght400_GRAD0_opsz24.svg" alt="">
+            </div>
+            <div id="masagemobile2">
+                <img src="./sms_24dp_000000_FILL1_wght400_GRAD0_opsz24.svg" alt="">
+                <p>messaging</p>
+            </div>
+            <div id="notification3">
+                <img src="./circle_notifications_24dp_000000_FILL1_wght400_GRAD0_opsz24 (1).svg" alt="">
+            </div>
+            <div id="notificationmobile2">
+                <img src="./circle_notifications_24dp_000000_FILL1_wght400_GRAD0_opsz24 (1).svg" alt="">
+                <p>notification</p>
+            </div>
+            <div id="about3">
+                <img src="./menu_24dp_000000_FILL1_wght400_GRAD0_opsz24 (1).svg" alt="">
+            </div>
+            <div id="aboutmobile2">
+                <img src="./menu_24dp_000000_FILL1_wght400_GRAD0_opsz24 (1).svg" alt="">
+                <p>about</p>
+            </div>
+            <div id="forbusiness2">
+                <img src="./apps_24dp_000000_FILL1_wght400_GRAD0_opsz24.svg" alt="">
+            </div>
+            <div id="forbusinessmobile2">
+                <img src="./apps_24dp_000000_FILL1_wght400_GRAD0_opsz24.svg" alt="">
+                <p>business</p>
+            </div>
+        </div>
+        <div id="HeaderLower">
+            <div id="HeaderLowerLeft">
+                <div id="leftfirst">
+                    <div id="leftfirst1">
+                        <img id="leftfirst1img"
+                            src="https://wallpapers.com/images/featured/most-beautiful-nature-hdb30wtkjbn08xlf.jpg"
+                            alt="">
+                    </div>
+                    <div id="leftfirst2">
+                        <h2 id="leftfirstinfo">Sahil joshi</h2>
+                        <p style="font-size: 13px; margin-bottom: 5px;">Attended Mumbai Education Trust,MET Language Of
+                            Collage<span style="color: grey;">Mumbai,Maharashtra</span> </p>
+                        <h3>Student</h3>
+                    </div>
+
+                </div>
+                <div id="LeftSecound">
+                    <div id="LeftSecoundUnder">
+                        <img src="./list_24dp_000000_FILL0_wght400_GRAD0_opsz24.svg" alt="">
+                        <h4>Preference</h4>
+                    </div>
+                    <div id="LeftSecoundUnder">
+                        <img src="./bookmark_24dp_000000_FILL1_wght400_GRAD0_opsz24.svg" alt="">
+                        <h4>My Job</h4>
+                    </div>
+                    <div id="LeftSecoundUnder">
+                        <img src="./business_center_24dp_000000_FILL1_wght400_GRAD0_opsz24.svg" alt="">
+                        <h4>My career insights</h4>
+                    </div>
+                </div>
+                <div id="right3">
+                    <footer id="footerright">
+                        <span id="rightspan">About</span>
+                        <span id="rightspan">Accessability</span>
+                        <span id="rightspan">Help center</span>
+                        <span id="rightspan">Privacy & Terms</span>
+                        <span id="rightspan">Ad choice</span>
+                        <span id="rightspan">Advertising</span>
+                        <span id="rightspan">Business</span>
+                        <span id="rightspan">Services</span>
+                        <span id="rightspan">Get the LinkDin app</span>
+                        <span id="rightspan">More</span>
+
+                    </footer>
+                    <img src="https://th.bing.com/th/id/R.ef2f3c0ea2d1116f00a5bc56b8c066ce?rik=GYaDoFewrbjMYA&riu=http%3a%2f%2f1000marcas.net%2fwp-content%2fuploads%2f2020%2f01%2fLogo-Linkedin.png&ehk=S4bpGdTYO0hvPM28u%2bFMX4ma7sBWXFdx85iEGZWSx1I%3d&risl=&pid=ImgRaw&r=0"
+                        alt="" style="height: 50px; width: 70px; margin-left: 10px;">
+                </div>
+            </div>
+            <div id="HeaderLowerRight">
+                <div id="HeaderLowerRightFirst">
+                    <div id="HeaderLowerRightFirstUnder">
+                        <p>
+                        <h3>Sahil, are you looking for a new job?</h3>Sahil, are you looking for a new job?
+                        Add your preferences to find relevant jobs and get notified about new open roles.</p>
+                    </div>
+                    <div id="HeaderLowerRightFirstUnderButton">
+                        <button id="ActivelltCasuallyButton">Actively Looking</button>
+                        <button id="ActivelltCasuallyButton">Casually browsing</button>
+                    </div>
+                </div>
+                <div id="HeaderLowerRightSecound">
+                    <div id="HeaderLowerRightSecound1">
+                        <p>
+                        <h2>Top job picks for you
+                        </h2>Based on your profile, preferences, and activity like applies, searches, and saves</p>
+                    </div>
+
+                    <div id="HeaderLowerRightSecound2">
+
+                        <div id="HeaderLowerRightSecound2IMG">
+                            <img src="./zycus_logo.jpeg" alt="" style="width: 70px; height: 70px;">
+                        </div>
+                        <div id="HeaderLowerRightSecound2Application">
+                            <h3>Application devloper</h3>
+                            <p>IBM Navi Mumbai, Maharashtra,india (Hybrid)</p>
+                            <br>
+                            <p>promoted</p>
+                        </div>
+                        <div id="Cross">
+                            <img src="./close_24dp_000000_FILL1_wght400_GRAD0_opsz24.svg" alt="">
+                        </div>
+
+                    </div>
+                    <hr>
+                    <div id="HeaderLowerRightSecound2">
+
+                        <div id="HeaderLowerRightSecound2IMG">
+                            <img src="./zycus_logo.jpeg" alt="" style="width: 70px; height: 70px;">
+                        </div>
+                        <div id="HeaderLowerRightSecound2Application">
+                            <h3>Application devloper</h3>
+                            <p>IBM Navi Mumbai, Maharashtra,india (Hybrid)</p>
+                            <br>
+                            <p>promoted</p>
+                        </div>
+                        <div id="Cross">
+                            <img src="./close_24dp_000000_FILL1_wght400_GRAD0_opsz24.svg" alt="">
+                        </div>
+
+                    </div>
+                    <hr>
+                    <div id="HeaderLowerRightSecound2">
+
+                        <div id="HeaderLowerRightSecound2IMG">
+                            <img src="./zycus_logo.jpeg" alt="" style="width: 70px; height: 70px;">
+                        </div>
+                        <div id="HeaderLowerRightSecound2Application">
+                            <h3>Application devloper</h3>
+                            <p>IBM Navi Mumbai, Maharashtra,india (Hybrid)</p>
+                            <br>
+                            <p>promoted</p>
+                        </div>
+                        <div id="Cross">
+                            <img src="./close_24dp_000000_FILL1_wght400_GRAD0_opsz24.svg" alt="">
+                        </div>
+
+                    </div>
+                    <hr>
+                    <div id="showall">
+                        <p>Show all</p>
+                    </div>
+
+                </div>
+                <div id="HeaderLowerRightThired">
+                    <div id="HeaderLowerRightThired1">
+                        <div>
+                            <h3>Explore companies that hire for your skills</h3>
+                            <p>promoted</p>
+                        </div>
+                        <div>
+                            <img src="./arrow_back_ios_24dp_000000_FILL1_wght400_GRAD0_opsz24.svg" alt="">
+                            <img src="./arrow_forward_ios_24dp_000000_FILL1_wght400_GRAD0_opsz24.svg" alt="">
+                        </div>
+
+                    </div>
+                    <div id="HeaderLowerRightThired2Parent">
+                        <div id="HeaderLowerRightThired2">
+                            <div id="HeaderLowerRightThired2First">
+                                <img src="./1680781708596.jpeg" alt=""
+                                    style="width: 100%; height: 100%; border-radius: 10px;">
+                            </div>
+                            <div id="HeaderLowerRightThired2Secound">
+                                <h2>ACI Worldwide</h2>
+                                <p>1,004-5000 employee Mumbai metropolitan</p>
+                            </div>
+                            <div>
+                                <p>
+                                <h4>We build transformative software</h4>solutions that deliver intelligent payments
+                                orchestration for the world’s leading enterprises.</p>
+                            </div>
+                        </div>
+                        <div id="HeaderLowerRightThired2">
+                            <div id="HeaderLowerRightThired2First">
+                                <img src="./1680781708596.jpeg" alt=""
+                                    style="width: 100%; height: 100%; border-radius: 10px;">
+                            </div>
+                            <div id="HeaderLowerRightThired2Secound">
+                                <h2>ACI Worldwide</h2>
+                                <p>1,004-5000 employee Mumbai metropolitan</p>
+                            </div>
+                            <div>
+                                <p>
+                                <h4>We build transformative software</h4>solutions that deliver intelligent payments
+                                orchestration for the world’s leading enterprises.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div id="HeaderLowerRightSecound">
+                    <div id="HeaderLowerRightSecound1">
+                        <p>
+                        <h2>More job for you
+                        </h2>Based on your profile, preferences, and activity like applies, searches, and saves</p>
+                    </div>
+
+                    <div id="HeaderLowerRightSecound2">
+
+                        <div id="HeaderLowerRightSecound2IMG">
+                            <img src="./business_next_logo.jpeg" alt="" style="width: 70px; height: 70px;">
+                        </div>
+                        <div id="HeaderLowerRightSecound2Application">
+                            <h3>Application devloper</h3>
+                            <p>IBM Navi Mumbai, Maharashtra,india (Hybrid)</p>
+                            <br>
+                           
+                        </div>
+                        <div id="Cross">
+                            <img src="./close_24dp_000000_FILL1_wght400_GRAD0_opsz24.svg" alt="">
+                        </div>
+
+                    </div>
+                    <hr>
+                    <div id="HeaderLowerRightSecound2">
+
+                        <div id="HeaderLowerRightSecound2IMG">
+                            <img src="./acko_logo.jpeg" alt="" style="width: 70px; height: 70px;">
+                        </div>
+                        <div id="HeaderLowerRightSecound2Application">
+                            <h3>Application devloper</h3>
+                            <p>IBM Navi Mumbai, Maharashtra,india (Hybrid)</p>
+                            <br>
+                           
+                        </div>
+                        <div id="Cross">
+                            <img src="./close_24dp_000000_FILL1_wght400_GRAD0_opsz24.svg" alt="">
+                        </div>
+
+                    </div>
+                    <hr>
+                    <div id="HeaderLowerRightSecound2">
+
+                        <div id="HeaderLowerRightSecound2IMG">
+                            <img src="./acko_logo.jpeg" alt="" style="width: 70px; height: 70px;">
+                        </div>
+                        <div id="HeaderLowerRightSecound2Application">
+                            <h3>Mulesoft devloper</h3>
+                            <p>IBM Navi Mumbai, Maharashtra,india (Hybrid)</p>
+                            <br>
+                           
+                        </div>
+                        <div id="Cross">
+                            <img src="./close_24dp_000000_FILL1_wght400_GRAD0_opsz24.svg" alt="">
+                        </div>
+
+                    </div>
+                    <hr>
+                    <div id="HeaderLowerRightSecound2">
+
+                        <div id="HeaderLowerRightSecound2IMG">
+                            <img src="./acko_logo.jpeg" alt="" style="width: 70px; height: 70px;">
+                        </div>
+                        <div id="HeaderLowerRightSecound2Application">
+                            <h3>Principle software engineer-client success</h3>
+                            <p>IBM Navi Mumbai, Maharashtra,india (Hybrid)</p>
+                            <br>
+                           
+                        </div>
+                        <div id="Cross">
+                            <img src="./close_24dp_000000_FILL1_wght400_GRAD0_opsz24.svg" alt="">
+                        </div>
+
+                    </div>
+                    <hr>
+                    <div id="HeaderLowerRightSecound2">
+
+                        <div id="HeaderLowerRightSecound2IMG">
+                            <img src="./acko_logo.jpeg" alt="" style="width: 70px; height: 70px;">
+                        </div>
+                        <div id="HeaderLowerRightSecound2Application">
+                            <h3>Sailpoint</h3>
+                            <p>IBM Navi Mumbai, Maharashtra,india (Hybrid)</p>
+                            <br>
+                           
+                        </div>
+                        <div id="Cross">
+                            <img src="./close_24dp_000000_FILL1_wght400_GRAD0_opsz24.svg" alt="">
+                        </div>
+
+                    </div>
+                    <hr>
+                    <div id="HeaderLowerRightSecound2">
+
+                        <div id="HeaderLowerRightSecound2IMG">
+                            <img src="./acko_logo.jpeg" alt="" style="width: 70px; height: 70px;">
+                        </div>
+                        <div id="HeaderLowerRightSecound2Application">
+                            <h3>Devloper-L3</h3>
+                            <p>IBM Navi Mumbai, Maharashtra,india (Hybrid)</p>
+                            <br>
+                           
+                        </div>
+                        <div id="Cross">
+                            <img src="./close_24dp_000000_FILL1_wght400_GRAD0_opsz24.svg" alt="">
+                        </div>
+
+                    </div>
+                    <hr>
+                    <div id="HeaderLowerRightSecound2">
+
+                        <div id="HeaderLowerRightSecound2IMG">
+                            <img src="./acko_logo.jpeg" alt="" style="width: 70px; height: 70px;">
+                        </div>
+                        <div id="HeaderLowerRightSecound2Application">
+                            <h3>Integration Devloper</h3>
+                            <p>IBM Navi Mumbai, Maharashtra,india (Hybrid)</p>
+                            <br>
+                           
+                        </div>
+                        <div id="Cross">
+                            <img src="./close_24dp_000000_FILL1_wght400_GRAD0_opsz24.svg" alt="">
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
