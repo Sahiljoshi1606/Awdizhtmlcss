@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>about</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #fff;
+      color: #111;
+      padding: 20px;
+    }
+
+    .container {
+      display: flex;
+      justify-content: space-between;
+      gap: 40px;
+      padding: 20px;
+    }
+
+    .left-panel {
+      flex: 1;
+      max-width: 300px;
+    }
+
+    .left-panel h2 {
+      margin-bottom: 20px;
+    }
+
+    .left-panel ul {
+      list-style: none;
+    }
+
+    .left-panel li {
+      display: flex;
+      align-items: center;
+      padding: 10px 0;
+      font-size: 15px;
+      cursor: pointer;
+    }
+
+    .left-panel li img {
+      margin-right: 10px;
+      width: 20px;
+      height: 20px;
+    }
+
+    .left-panel .category {
+      margin-top: 15px;
+      font-weight: bold;
+      font-size: 14px;
+      color: #888;
+    }
+
+    .right-panel {
+      flex: 2;
+    }
+
+    .right-panel h2 {
+      margin-bottom: 20px;
+    }
+
+    .right-panel .item {
+      margin-bottom: 18px;
+    }
+
+    .right-panel .item h4 {
+      font-size: 16px;
+      font-weight: 600;
+    }
+
+    .right-panel .item p {
+      font-size: 14px;
+      color: #555;
+    }
+
+    @media (max-width: 1024px) {
+      .container {
+        flex-direction: column;
+        justify-content: space-around;
+      }
+
+      .left-panel,
+      .right-panel {
+        max-width: 100%;
+      }
+
+      .left-panel li,
+      .right-panel .item {
+        padding: 8px 0;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <section class="left-panel">
+      <h2>My Apps</h2>
+      <ul>
+        <li><img src="https://img.icons8.com/ios-filled/24/compass.png" /> Find New Clients</li>
+        <li><img src="https://img.icons8.com/ios-filled/24/groups.png" /> Groups</li>
+        <li><img src="https://img.icons8.com/ios-filled/24/services.png" /> Manage Billing</li>
+
+        <p class="category">Talent</p>
+        <li><img src="./talent-insights-icon.svg" /> Talent Insights</li>
+        <li><img src="https://img.icons8.com/ios-filled/24/job.png" /> Post a job</li>
+
+        <p class="category">Sales</p>
+        <li><img src="https://img.icons8.com/ios-filled/24/sales-performance.png" /> Services Marketplace</li>
+
+        <p class="category">Marketing</p>
+        <li><img src="./advertisement-icon.svg" /> Advertise</li>
+      </ul>
+    </section>
+
+    <section class="right-panel">
+      <h2>Explore more for business</h2>
+      <div class="item">
+        <h4>Hire on LinkedIn</h4>
+        <p>Find, attract and recruit talent</p>
+      </div>
+      <div class="item">
+        <h4>Sell with LinkedIn</h4>
+        <p>Unlock sales opportunities</p>
+      </div>
+      <div class="item">
+        <h4>Post a job</h4>
+        <p>Hire for your small business</p>
+      </div>
+      <div class="item">
+        <h4>Advertise on LinkedIn</h4>
+        <p>Acquire customers and grow your business</p>
+      </div>
+      <div class="item">
+        <h4>Elevate your small business</h4>
+        <p>Find new clients and build credibility</p>
+      </div>
+      <div class="item">
+        <h4>Learn with LinkedIn</h4>
+        <p>Courses to develop your employees</p>
+      </div>
+      <div class="item">
+        <h4>Admin Center</h4>
+        <p>Manage billing and account details</p>
+      </div>
+      <div class="item">
+        <h4>Create a Company Page +</h4>
+      </div>
+    </section>
+  </div>
+</body>
+
+</html>
