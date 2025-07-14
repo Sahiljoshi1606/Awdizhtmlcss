@@ -1,0 +1,1587 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home page</title>
+
+    <style>
+        * {
+            padding: 0px;
+            margin: 0px;
+            box-sizing: border-box;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+
+        }
+
+        #main {
+            height: 800px;
+            width: 100%;
+            /* margin: 0px 5px; */
+            margin-top: 1px;
+            /* border: 1px solid black; */
+            /* margin: 0px 26px; */
+            background-color: #f3f2f0;
+            padding: 10px;
+
+        }
+
+        #header2 {
+            width: 100%;
+            height: 5%;
+            /* border: 1px solid black; */
+            display: flex;
+            background-color: white;
+            position: fixed;
+            justify-content: space-between;
+            padding: 10px;
+
+        }
+
+        #headerleft {
+            display: none;
+        }
+
+        #headerright {
+            display: none;
+        }
+
+        #logo2 {
+            width: 10%;
+            height: 70%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 10px;
+            /* border: 1px solid black; */
+        }
+
+        #search2 {
+            width: 10%;
+            height: 70%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 10px;
+            ;
+            /* border: 1px solid black; */
+        }
+
+        #searchmobile2 {
+            display: none;
+        }
+
+        #mobilesearchicom2 {
+            display: none;
+        }
+
+        #home2 {
+            width: 10%;
+            height: 70%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 10px;
+            /* border: 1px solid black; */
+        }
+
+        #homemobile2 {
+            display: none;
+        }
+
+        #network2 {
+            width: 10%;
+            height: 70%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 10px;
+            /* border: 1px solid black; */
+        }
+
+        #job2 {
+            width: 10%;
+            height: 70%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 10px;
+            /* border: 1px solid black; */
+        }
+
+        #masage2 {
+            width: 10%;
+            height: 70%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 10px;
+            /* border: 1px solid black; */
+        }
+
+        #notification3 {
+            width: 10%;
+            height: 70%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 10px;
+            /* border: 1px solid black; */
+        }
+
+        #about3 {
+            width: 10%;
+            height: 70%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 10px;
+            /* border: 1px solid black; */
+        }
+
+        #networkmobile2 {
+            display: none;
+        }
+
+        #jobmobile2 {
+            display: none;
+        }
+
+        #masagemobile2 {
+            display: none;
+        }
+
+        #notificationmobile2 {
+            display: none;
+        }
+
+        #aboutmobile2 {
+            display: none;
+        }
+
+        #forbusinessmobile2 {
+            display: none;
+        }
+
+        #forbusiness2 {
+            display: none;
+        }
+
+        #headerlower {
+            height: 80px;
+            /* border: 1px solid black; */
+            background-color: rgb(160, 180, 183);
+            margin-top: 40px;
+        }
+
+        #selfname {
+            margin-top: 30px;
+            margin-bottom: 5px;
+            background-color: white;
+
+        }
+
+        #info {
+            padding: 0px 10px;
+            background-color: white;
+        }
+
+        #headerlowerlaptop {
+            display: none;
+        }
+
+        #selfimg {
+            border-radius: 50%;
+            height: 70px;
+            width: 70px;
+            margin-top: 35px;
+            margin-left: 10px;
+            /* border: 1px solid red; */
+        }
+
+        #infolaptop {
+            display: none;
+        }
+
+
+
+        #imr {
+            display: none;
+        }
+
+        #left {
+            display: none;
+        }
+
+        #right {
+            display: none;
+        }
+
+        #middel {
+            display: none;
+        }
+
+        #postmobile {
+            height: 100px;
+            width: 100%;
+            /* border: 1px solid red; */
+            background-color: #fdf0de;
+            border-radius: 10px;
+            margin-top: 10px;
+        }
+
+        #Post1 {
+            display: flex;
+            justify-content: space-between;
+            padding-left: 5px;
+            padding-top: 5px;
+            font-weight: 500;
+        }
+
+        #Post2 {
+            padding: 5px;
+        }
+
+        #PostButton {
+            border-radius: 40px;
+            height: 30px;
+            width: 100px;
+            margin: 5px;
+            background-color: #fdf0de;
+
+        }
+
+        #postmobile1 {
+            display: flex;
+            align-items: flex-start;
+            padding: 15px;
+        }
+
+        #postmobile2 {
+            display: flex;
+            justify-content: space-around;
+        }
+
+        #middelsecoundmobile {
+            height: 60px;
+            width: 100%;
+            /* border: 1px solid black; */
+            padding: 10px;
+            background-color: white;
+            border-radius: 10px;
+            margin-bottom: 10px;
+            display: flex;
+        }
+
+        #middelsecoundButton1 {
+            border-radius: 30px;
+            width: 40px;
+            height: 30px;
+            margin: 5px;
+            font-weight: 500;
+
+        }
+
+        #middelsecoundButton2 {
+            border-radius: 30px;
+            width: 45px;
+            height: 30px;
+            margin: 5px;
+            font-weight: 500;
+        }
+
+        #middelsecoundButton3 {
+            border-radius: 30px;
+            width: 65px;
+            height: 30px;
+            margin: 5px;
+            font-weight: 500;
+        }
+
+        #middelsecoundButton4 {
+            border-radius: 30px;
+            width: 65px;
+            height: 30px;
+            margin: 5px;
+            font-weight: 500;
+        }
+
+        #middelsecound1mobile {
+            height: 150px;
+            width: 95%;
+            margin: 10px;
+            padding: 10px;
+            /* border: 1px solid black; */
+            border-radius: 10px;
+            background-color: #f4f1f8;
+        }
+
+        #middelsecound2mobile {
+            height: 30px;
+            width: 100%;
+            margin-top: 10px;
+            margin-bottom: 40px;
+            /* border: 1px solid black; */
+            display: flex;
+            justify-content: space-between;
+        }
+
+        #middelsecoundcogratsmobile {
+            height: 50px;
+            padding: 5px;
+            width: 48%;
+            border: 2px solid black;
+            border-radius: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 5px;
+        }
+        #HeaderLowerMainRight2Secound {
+                height: 140px;
+                /* border: 1px solid black; */
+                background-color: #d7e9fb;
+                border-radius: 10px;
+                margin-top: 3px;
+                display: flex;
+                align-items: center;
+                
+            }
+
+            #HeaderLowerMainRight2SecoundImg {
+                border-radius: 50%;
+                height: 60px;
+                width: 60px;
+                margin: 10px;
+
+            }
+
+        #right1mobile {
+            height: 350px;
+            width: 100%;
+            padding: 5px;
+            background-color: white;
+            margin-top: 20px;
+            border-radius: 10px;
+            /* border: 1px solid black; */
+        }
+
+        #right1under1mobile {
+            /* margin-bottom: 5px; */
+            font-size: 20px;
+            text-decoration: none;
+            font-weight: 100;
+        }
+
+        #right2mobile {
+            height: 30px;
+            /* border: 2px solid black; */
+            background-color: white;
+            border-radius: 10px;
+
+        }
+
+        #right3mobile {
+            /* border: 1px solid black; */
+            align-items: flex-end;
+            display: flex;
+            margin-top: 30px;
+        }
+
+        #footerrightmobile {
+            text-align: center;
+
+        }
+
+        #search {
+            display: none;
+        }
+
+        #search {
+            display: none;
+        }
+
+
+
+
+        @media (min-width: 1024px) {
+            #main {
+                height: 800px;
+                width: 98%;
+                margin-left: 20px;
+                margin-right: 20px;
+                margin-top: 1px;
+                background-color: #f4f2ee;
+            }
+
+            #header {
+                width: 100%;
+                height: 7%;
+                /* border: 1px solid black; */
+                display: flex;
+                position: fixed;
+                justify-content: space-around;
+                background-color: #ffffff;
+                text-align: center;
+                align-items: center;
+
+            }
+
+            #home {
+                display: none;
+            }
+
+            #network {
+                display: none;
+            }
+
+            #job {
+                display: none;
+            }
+
+            #masage {
+                display: none;
+            }
+
+            #notification {
+                display: none;
+            }
+
+            #about {
+                display: none;
+            }
+
+            #forbusiness {
+                display: none;
+            }
+
+            #header2 {
+                display: none;
+            }
+
+            #logo2 {
+                display: none;
+            }
+
+            #search2 {
+                display: none;
+            }
+
+            #home2 {
+                display: none;
+            }
+
+            #network2 {
+                display: none;
+            }
+
+            #job2 {
+                display: none;
+            }
+
+            #masage2 {
+                display: none;
+            }
+
+            #notification3 {
+                display: none;
+            }
+
+            #about3 {
+                display: none;
+            }
+
+            #headerleft {
+                height: 50px;
+                width: 25%;
+                /* border: 1px solid black; */
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+
+            #headerright {
+                height: 50px;
+                width: 50%;
+
+                display: flex;
+                align-items: center;
+                text-align: center;
+                justify-content: space-around;
+
+            }
+
+            #search {
+                display: none;
+            }
+
+            #searchmobile {
+                display: block;
+                display: flex;
+                border: 1px solid black;
+                height: 30px;
+                width: 400px;
+                align-items: center;
+                border-radius: 20px;
+                margin-left: 10px;
+
+            }
+
+            #mobilesearchicom {
+                display: block;
+                align-items: center;
+                display: flex;
+                justify-content: center;
+                /* border: 1px solid black; */
+                height: 50px;
+                width: 50px;
+                padding-left: 10px;
+            }
+
+            #home2 {
+                display: none;
+            }
+
+            #homemobile {
+                display: block;
+                width: 3%;
+                height: 98%;
+                /* border: 1px solid black; */
+                align-items: center;
+                justify-content: center;
+                margin-left: 10px;
+                /* margin-bottom: 25px; */
+                text-align: center;
+            }
+
+            #network2 {
+                display: none;
+            }
+
+            #networkmobile2 {
+                display: block;
+                width: 5%;
+                height: 98%;
+                /* border: 1px solid black; */
+                align-items: center;
+                margin-left: 50px;
+                margin-bottom: 25px;
+                text-align: center;
+                justify-content: center;
+            }
+
+            #networkmobile {
+                /* text-align: center; */
+                width: 30px;
+                margin-right: 20px;
+                margin-left: 20px;
+                /* border: 1px solid black; */
+            }
+
+            #job2 {
+                display: none;
+            }
+
+            #jobmobile2 {
+                display: block;
+                width: 5%;
+                height: 98%;
+                /* border: 1px solid black; */
+                align-items: center;
+                margin-left: 50px;
+                margin-bottom: 25px;
+                text-align: center;
+            }
+
+            #masage2 {
+                display: none;
+            }
+
+            #masagemobile2 {
+                display: block;
+                width: 5%;
+                height: 98%;
+                /* border: 1px solid black; */
+                align-items: center;
+                margin-left: 50px;
+                margin-bottom: 25px;
+                text-align: center;
+            }
+
+            #notification2 {
+                display: none;
+            }
+
+            #notificationmobile3 {
+                display: block;
+                width: 5%;
+                height: 98%;
+                /* border: 1px solid black; */
+                align-items: center;
+                margin-left: 50px;
+                margin-bottom: 25px;
+                text-align: center;
+            }
+
+            #about3 {
+                display: none;
+            }
+
+            #aboutmobile2 {
+                display: block;
+                width: 5%;
+                height: 98%;
+                /* border: 1px solid black; */
+                align-items: center;
+                margin-left: 50px;
+                margin-bottom: 25px;
+                text-align: center;
+
+            }
+
+            #forbusiness2 {
+                display: none;
+            }
+
+            #forbusinessmobile2 {
+                display: block;
+                width: 5%;
+                height: 98%;
+                /* border: 1px solid black; */
+                align-items: center;
+                margin-left: 40px;
+                margin-right: 30px;
+                margin-bottom: 25px;
+                text-align: center;
+            }
+
+            #headerlower {
+                display: none;
+            }
+
+            #headerlowerlaptop {
+                display: block;
+                width: 15%;
+                height: 10%;
+                /* border: 1px solid black; */
+                background-color: rgb(160, 180, 183);
+                margin-left: 15px;
+                margin-top: 15px;
+                margin-bottom: 5px;
+                border-radius: 10px;
+
+            }
+
+            #info {
+                display: none;
+            }
+
+            #infolaptop {
+                display: block;
+                /* border: 1px solid black; */
+                width: 15%;
+                margin-left: 15px;
+                background-color: #ffffff;
+                border-radius: 10px;
+
+            }
+
+            #selfimg {
+                border-radius: 50%;
+                height: 50px;
+                width: 70px;
+                margin-top: 10px;
+                margin-left: 10px;
+                border: 1px solid red;
+            }
+
+            #seemore {
+                display: none;
+            }
+
+            #imr {
+                height: 700px;
+                width: 100%;
+                display: flex;
+
+                margin-top: 70px;
+
+            }
+
+            #left {
+                height: 95%;
+                width: 30%;
+                /* border: 1px solid black; */
+                /* display: flex;
+                justify-content: end; */
+                margin-right: 5px;
+                background-color: #f3f2f0;
+                margin-bottom: 10px;
+                display: block;
+            }
+
+            #leftfirst {
+                /* border: 1px solid black; */
+                margin-left: 140px;
+                height: 160px;
+                width: 250px;
+                margin-top: 10px;
+                margin-right: 5px;
+                border-radius: 10px;
+
+            }
+
+            #leftfirst1 {
+                height: 70px;
+                width: 100%;
+                background-color: #d9e5e7;
+                align-items: flex-end;
+                display: flex;
+                justify-content: center;
+                border-radius: 10px;
+            }
+
+            #leftfirst1img {
+                height: 70px;
+                width: 70px;
+                border-radius: 50%;
+            }
+
+            #leftfirst2 {
+                height: 100px;
+                width: 100%;
+                margin-left: 10px;
+            }
+
+            #leftsecound {
+                /* border: 1px solid black; */
+                margin-left: 10px;
+                height: 60px;
+                margin-top: 10px;
+                width: 250px;
+                /* display: flex; */
+                /* align-items: flex-end; */
+                border-radius: 10px;
+                background-color: white;
+                margin-left: 140px;
+                border-radius: 10px;
+            }
+
+            #leftsecound1 {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                height: 20px;
+                width: 100%;
+                /* border: 1px solid black; */
+                padding: 10px;
+            }
+
+            #leftthird {
+                height: 80px;
+                width: 250px;
+                /* border: 1px solid black; */
+                margin-left: 140px;
+                background-color: white;
+                margin-top: 10px;
+                border-radius: 10px;
+
+
+            }
+
+            #leftthird1 {
+                font-weight: bold;
+                text-align: center;
+            }
+
+            #LeftThird2 {
+                color: blue;
+                padding-left: 27px;
+                padding-top: 10px;
+            }
+
+            #leftthirdfirst1 {
+                margin-left: 10px;
+            }
+
+
+
+            #middel {
+                height: 95%;
+                width: 40%;
+                /* border: 1px solid black; */
+                background-color: #f3f2f0;
+                padding: 10px;
+                display: block;
+            }
+
+            #post {
+                height: 100px;
+                width: 100%;
+                /* border: 1px solid red; */
+                background-color: #fdf0de;
+                border-radius: 10px;
+                margin-bottom: 10px;
+            }
+
+            #Post1 {
+                display: flex;
+                justify-content: space-between;
+                padding-left: 5px;
+                padding-top: 5px;
+                font-weight: 500;
+            }
+
+            #Post2 {
+                padding: 5px;
+            }
+
+            #PostButton {
+                border-radius: 40px;
+                height: 30px;
+                width: 100px;
+                margin: 5px;
+                background-color: #fdf0de;
+
+            }
+
+            #middelsecound {
+                height: 70px;
+                background-color: white;
+                border-radius: 10px;
+                width: 100%;
+                /* border: 1px solid black; */
+                padding: 10px;
+            }
+
+            #middelsecoundButton {
+                display: flex;
+            }
+
+            #middelsecoundButton1 {
+                border-radius: 30px;
+                width: 40px;
+                height: 30px;
+                margin: 5px;
+                font-weight: 500;
+
+            }
+
+            #middelsecoundButton2 {
+                border-radius: 30px;
+                width: 45px;
+                height: 30px;
+                margin: 5px;
+                font-weight: 500;
+            }
+
+            #middelsecoundButton3 {
+                border-radius: 30px;
+                width: 65px;
+                height: 30px;
+                margin: 5px;
+                font-weight: 500;
+            }
+
+            #middelsecoundButton4 {
+                border-radius: 30px;
+                width: 65px;
+                height: 30px;
+                margin: 5px;
+                font-weight: 500;
+            }
+
+            #HeaderLowerMainRight2Secound {
+                height: 100px;
+                /* border: 1px solid black; */
+                background-color: #d7e9fb;
+                border-radius: 10px;
+                margin-top: 3px;
+                display: flex;
+                align-items: center;
+            }
+
+            #HeaderLowerMainRight2SecoundImg {
+                border-radius: 50%;
+                height: 60px;
+                width: 60px;
+                margin: 10px;
+
+            }
+
+            #invite {
+                display: flex;
+                align-items: center;
+            }
+
+            #butoonAccept {
+                border-radius: 30px;
+                background-color: white;
+                color: blue;
+                width: 100%;
+                padding: 5px 20px;
+                border: 2px solid blue;
+            }
+
+
+
+
+            #right {
+                height: 95%;
+                width: 27%;
+                /* border: 1px solid black; */
+                background-color: #f3f2f0;
+                padding: 10px;
+                display: block;
+            }
+
+            #right1 {
+                height: 400px;
+                width: 250px;
+                background-color: white;
+                /* border: 1px solid black; */
+
+            }
+
+            #right1under {
+                padding: 10px;
+            }
+
+            #right1under1 {
+                margin-top: 10px;
+            }
+
+            #right2 {
+                height: 100px;
+                width: 246px;
+                /* border: 1px solid black; */
+                padding: 10px;
+                margin: 5px;
+                background-color: white;
+
+
+
+            }
+
+            #right3 {
+                height: 100px;
+                width: 100px;
+                margin: 10px;
+                padding: 10px;
+                gap: 5px;
+
+
+
+            }
+
+            #footerright {
+
+
+                width: 250px;
+                height: 150px;
+                /* border: 1px solid black; */
+
+            }
+
+            #rightspan {
+                margin: 7px;
+                color: grey;
+                text-align: center;
+            }
+
+            #headerlowe {
+                display: none;
+            }
+
+            #info {
+                display: none;
+            }
+
+            #headerlowerlaptop {
+                display: none;
+            }
+
+            #infolaptop {
+                display: none;
+            }
+
+            #selfname {
+                display: none;
+            }
+
+            #postmobile {
+                display: none;
+            }
+
+            #postmobile1 {
+                display: none;
+            }
+
+            #postmobile2 {
+                display: none;
+            }
+
+            #middelsecoundmobile {
+                display: none;
+            }
+
+            #middelsecound1mobile {
+                display: none;
+            }
+
+            #middelsecound2mobile {
+                display: none;
+            }
+
+            #middelsecoundcogratsmobile {
+                display: none;
+            }
+
+            #right1mobile {
+                display: none;
+            }
+
+            #right1undermobile {
+                display: none;
+            }
+
+            #right2mobile {
+                display: none;
+            }
+
+            #right3mobile {
+                display: none;
+            }
+
+            #footerrightmobile {
+                display: none;
+            }
+
+            #rightspanmobile {
+                display: none;
+            }
+
+
+
+        }
+    </style>
+</head>
+
+<body>
+    <div id="main">
+        <div id="header">
+
+            <div id="headerleft">
+
+
+
+                <div id="mobilesearchicom">
+                    <img src="https://static.vecteezy.com/system/resources/previews/021/460/490/original/linkedin-logo-free-download-free-png.png"
+                        alt=""
+                        style="width:70px; height:70px; display: flex; justify-content: center; align-items: center;">
+                </div>
+
+                <div id="searchmobile">
+                    <img src="./search_24dp_000000_FILL1_wght400_GRAD0_opsz24.svg">
+                    <input type="text" placeholder="search"
+                        style="border: none; width: 250px; outline: none; box-shadow: none; ">
+                </div>
+            </div>
+            <div id="search">
+                <img src="./search_24dp_000000_FILL1_wght400_GRAD0_opsz24.svg">
+            </div>
+
+
+            <div id="headerright">
+                <div id="home">
+                    <img src="./home_24dp_000000_FILL1_wght400_GRAD0_opsz24.svg" alt="">
+
+                </div>
+                <div id="homemobile">
+                    <img src="./home_24dp_000000_FILL1_wght400_GRAD0_opsz24.svg" alt="">
+                    <a href="./homepage.html" style="color: black; text-decoration: none;text-align: center; "> home</a>
+                </div>
+                <div id="network">
+                    <img src="./diversity_3_24dp_000000_FILL1_wght400_GRAD0_opsz24.svg" alt="">
+                </div>
+                <div id="networkmobile">
+                    <img src="./diversity_3_24dp_000000_FILL1_wght400_GRAD0_opsz24.svg" alt="">
+                    <a href="./Network.html" style="color: black; text-decoration: none; text-align: center; ">
+                        Network</a>
+                </div>
+                <div id="job">
+                    <img src="./business_center_24dp_000000_FILL1_wght400_GRAD0_opsz24.svg" alt="">
+                </div>
+                <div id="jobmobile">
+                    <img src="./business_center_24dp_000000_FILL1_wght400_GRAD0_opsz24.svg" alt="">
+                    <p>job</p>
+                </div>
+                <div id="masage">
+                    <img src="./sms_24dp_000000_FILL1_wght400_GRAD0_opsz24.svg" alt="">
+                </div>
+                <div id="masagemobile">
+                    <img src="./sms_24dp_000000_FILL1_wght400_GRAD0_opsz24.svg" alt="">
+                    <p>messaging</p>
+                </div>
+                <div id="notification">
+                    <img src="./circle_notifications_24dp_000000_FILL1_wght400_GRAD0_opsz24 (1).svg" alt="">
+                </div>
+                <div id="notificationmobile">
+                    <img src="./circle_notifications_24dp_000000_FILL1_wght400_GRAD0_opsz24 (1).svg" alt="">
+                    <p>notification</p>
+                </div>
+                <div id="about">
+                    <img src="./menu_24dp_000000_FILL1_wght400_GRAD0_opsz24 (1).svg" alt="">
+                </div>
+                <div id="aboutmobile">
+                    <img src="./menu_24dp_000000_FILL1_wght400_GRAD0_opsz24 (1).svg" alt="">
+                    <p>about</p>
+                </div>
+                <div id="forbusiness">
+                    <img src="./apps_24dp_000000_FILL1_wght400_GRAD0_opsz24.svg" alt="">
+                </div>
+                <div id="forbusinessmobile">
+                    <img src="./apps_24dp_000000_FILL1_wght400_GRAD0_opsz24.svg" alt="">
+                    <p>business</p>
+                </div>
+            </div>
+        </div>
+        <div id="header2">
+
+            <!-- <div id="headerleft"> -->
+            <div id="logo2">
+                <img src="https://th.bing.com/th/id/OIP.ocDQ_FjRiIwqT5pOFWCkZwHaEK?rs=1&pid=ImgDetMain" alt=""
+                    style="height: 30px;width: 50px;">
+            </div>
+            <div id="mobilesearchicom2">
+                <img src="https://static.vecteezy.com/system/resources/previews/021/460/490/original/linkedin-logo-free-download-free-png.png"
+                    alt=""
+                    style="width:70px; height:70px; display: flex; justify-content: center; align-items: center;">
+            </div>
+
+            <div id="searchmobile2">
+                <img src="./search_24dp_000000_FILL1_wght400_GRAD0_opsz24.svg">
+                <input type="text" placeholder="search"
+                    style="border: none; width: 250px; outline: none; box-shadow: none; ">
+            </div>
+
+            <div id="search2">
+                <img src="./search_24dp_000000_FILL1_wght400_GRAD0_opsz24.svg">
+            </div>
+            <!-- </div> -->
+
+            <!-- <div id="headerright"> -->
+            <div id="home2">
+                <img src="./home_24dp_000000_FILL1_wght400_GRAD0_opsz24.svg" alt="">
+
+            </div>
+            <div id="homemobile2">
+                <img src="./home_24dp_000000_FILL1_wght400_GRAD0_opsz24.svg" alt="">
+                <a href="./homepage.html" style="color: black; text-decoration: none; "> home</a>
+            </div>
+            <div id="network2">
+                <img src="./diversity_3_24dp_000000_FILL1_wght400_GRAD0_opsz24.svg" alt="">
+            </div>
+            <div id="networkmobile2">
+                <img src="./diversity_3_24dp_000000_FILL1_wght400_GRAD0_opsz24.svg" alt="">
+                <p> network</p>
+            </div>
+            <div id="job2">
+                <img src="./business_center_24dp_000000_FILL1_wght400_GRAD0_opsz24.svg" alt="">
+            </div>
+            <div id="jobmobile2">
+                <img src="./business_center_24dp_000000_FILL1_wght400_GRAD0_opsz24.svg" alt="">
+                <p>job</p>
+            </div>
+            <div id="masage2">
+                <img src="./sms_24dp_000000_FILL1_wght400_GRAD0_opsz24.svg" alt="">
+            </div>
+            <div id="masagemobile2">
+                <img src="./sms_24dp_000000_FILL1_wght400_GRAD0_opsz24.svg" alt="">
+                <p>messaging</p>
+            </div>
+            <div id="notification3">
+                <img src="./circle_notifications_24dp_000000_FILL1_wght400_GRAD0_opsz24 (1).svg" alt="">
+            </div>
+            <div id="notificationmobile2">
+                <img src="./circle_notifications_24dp_000000_FILL1_wght400_GRAD0_opsz24 (1).svg" alt="">
+                <p>notification</p>
+            </div>
+            <div id="about3">
+                <img src="./menu_24dp_000000_FILL1_wght400_GRAD0_opsz24 (1).svg" alt="">
+            </div>
+            <div id="aboutmobile2">
+                <img src="./menu_24dp_000000_FILL1_wght400_GRAD0_opsz24 (1).svg" alt="">
+                <p>about</p>
+            </div>
+            <div id="forbusiness2">
+                <img src="./apps_24dp_000000_FILL1_wght400_GRAD0_opsz24.svg" alt="">
+            </div>
+            <div id="forbusinessmobile2">
+                <img src="./apps_24dp_000000_FILL1_wght400_GRAD0_opsz24.svg" alt="">
+                <p>business</p>
+            </div>
+            <!-- </div> -->
+        </div>
+        <div id="imr">
+            <div id="left">
+                <div id="leftfirst">
+                    <div id="leftfirst1">
+                        <img id="leftfirst1img"
+                            src="https://wallpapers.com/images/featured/most-beautiful-nature-hdb30wtkjbn08xlf.jpg"
+                            alt="">
+                    </div>
+                    <div id="leftfirst2">
+                        <h2 id="leftfirstinfo">Sahil joshi</h2>
+                        <p style="font-size: 13px; margin-bottom: 5px;">Attended Mumbai Education Trust,MET Language Of
+                            Collage<span style="color: grey;">Mumbai,Maharashtra</span> </p>
+                        <h3>Student</h3>
+                    </div>
+
+                </div>
+                <div id="leftsecound">
+                    <div id="leftsecound1">
+                        <h5>Profile viewers</h5>
+                        <p>0</p>
+                    </div>
+                    <div id="leftsecound1">
+                        <h5>Post impression</h5>
+                        <p>0</p>
+                    </div>
+                </div>
+                <div id="leftthird">
+
+                    <div id="leftthird1">
+                        <p>Manage your notifications</p>
+                    </div>
+                    <div id="LeftThird2">
+                        <p>View setting</p>
+                    </div>
+                </div>
+            </div>
+            <div id="middel">
+                <div id="post">
+                    <div id="Post1">
+                        <p>LinkedIn is better on the new Windows app</p>
+                        <img src="./close_24dp_000000_FILL1_wght400_GRAD0_opsz24.svg" alt="">
+                    </div>
+                    <div id="Post2">
+                        <p>Never miss a reaction or comment</p>
+                    </div>
+                    <div>
+                        <button id="PostButton">open the app</button>
+                    </div>
+                </div>
+                <hr>
+                <br>
+                <div id="middelsecound">
+                    <div id="middelsecoundButton">
+                        <div>
+                            <button id="middelsecoundButton1">All</button>
+                        </div>
+                        <div>
+                            <button id="middelsecoundButton2">Jobs </button>
+                        </div>
+                        <div>
+                            <button id="middelsecoundButton3">My Post</button>
+                        </div>
+                        <div>
+                            <button id="middelsecoundButton4">Mention</button>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div id="HeaderLowerMainRight2Secound">
+                    <div>
+                        <img id="HeaderLowerMainRight2SecoundImg"
+                            src="https://th.bing.com/th/id/OIP.YQGwtpOGecZajkbh2HMMGAHaHa?rs=1&pid=ImgDetMain" alt="">
+                        <p>
+                    </div>
+                    <div id="InviteInfo">
+                        <p>
+                        <h4>Ganesh Patil </h4>Never Stop Believing
+
+                        Never Stop Inspiring
+
+                        Happy Monday
+
+                        Love ❤️ 😍 Love ❤️ 😍 </p>
+                        <p>Data Engineer
+
+                            Suhas Gholkar and 10 other mutual connections</p>
+                    </div>
+
+                </div>
+                <div id="HeaderLowerMainRight2Secound">
+                    <div>
+                        <img id="HeaderLowerMainRight2SecoundImg"
+                            src="https://th.bing.com/th/id/OIP.YQGwtpOGecZajkbh2HMMGAHaHa?rs=1&pid=ImgDetMain" alt="">
+                        <p>
+                    </div>
+                    <div id="InviteInfo">
+                        <p>
+                        <h4>Ganesh Patil </h4>Never Stop Believing
+
+                        Never Stop Inspiring
+
+                        Happy Monday
+
+                        Love ❤️ 😍 Love ❤️ 😍 </p>
+                        <p>Data Engineer
+
+                            Suhas Gholkar and 10 other mutual connections</p>
+                    </div>
+
+                </div>
+                <div id="HeaderLowerMainRight2Secound">
+                    <div>
+                        <img id="HeaderLowerMainRight2SecoundImg"
+                            src="https://th.bing.com/th/id/OIP.YQGwtpOGecZajkbh2HMMGAHaHa?rs=1&pid=ImgDetMain" alt="">
+                        <p>
+                    </div>
+                    <div id="InviteInfo">
+                        <p>
+                        <h4>Ganesh Patil </h4>Never Stop Believing
+
+                        Never Stop Inspiring
+
+                        Happy Monday
+
+                        Love ❤️ 😍 Love ❤️ 😍 </p>
+                        <p>Data Engineer
+
+                            Suhas Gholkar and 10 other mutual connections</p>
+                    </div>
+
+                </div>
+                <div id="HeaderLowerMainRight2Secound">
+                    <div>
+                        <img id="HeaderLowerMainRight2SecoundImg"
+                            src="https://th.bing.com/th/id/OIP.YQGwtpOGecZajkbh2HMMGAHaHa?rs=1&pid=ImgDetMain" alt="">
+                        <p>
+                    </div>
+                    <div id="InviteInfo">
+                        <p>
+                        <h4>Ganesh Patil </h4>Never Stop Believing
+
+                        Never Stop Inspiring
+
+                        Happy Monday
+
+                        Love ❤️ 😍 Love ❤️ 😍 </p>
+                        <p>Data Engineer
+
+                            Suhas Gholkar and 10 other mutual connections</p>
+                    </div>
+
+                </div>
+
+            </div>
+            <div id="right">
+
+                <div id="right2">
+                    <h2> Try LinkDin on the windows app</h2>
+                </div>
+                <div id="right3">
+                    <footer id="footerright">
+                        <span id="rightspan">About</span>
+                        <span id="rightspan">Accessability</span>
+                        <span id="rightspan">Help center</span>
+                        <span id="rightspan">Privacy & Terms</span>
+                        <span id="rightspan">Ad choice</span>
+                        <span id="rightspan">Advertising</span>
+                        <span id="rightspan">Business</span>
+                        <span id="rightspan">Services</span>
+                        <span id="rightspan">Get the LinkDin app</span>
+                        <span id="rightspan">More</span>
+                    </footer>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <div id="headerlower">
+            <img src="https://wallpapers.com/images/featured/most-beautiful-nature-hdb30wtkjbn08xlf.jpg" alt=""
+                id="selfimg">
+        </div>
+        <div id="info">
+            <h2 id="selfname">Sahil joshi</h2>
+            <p style="font-size: 15px; margin-bottom: 5px; background-color: white;">Attended Mumbai Education Trust,MET
+                Language Of Collage<span style="color: grey; background-color: white;">Mumbai,Maharashtra</span> </p>
+            <h3>Student</h3>
+        </div>
+        <div id="headerlowerlaptop">
+            <img src="https://wallpapers.com/images/featured/most-beautiful-nature-hdb30wtkjbn08xlf.jpg" alt=""
+                style="border-radius: 50%; height: 70px; width: 70px; margin-top: 30px; margin-left: 15px;">
+        </div>
+        <div id="infolaptop">
+            <h2 id="selfname">Sahil joshi</h2>
+            <p style="font-size: 15px; margin-bottom: 5px;">Attended Mumbai Education Trust,MET Language Of Collage<span
+                    style="color: grey;">Mumbai,Maharashtra</span> </p>
+            <h3>Student</h3>
+        </div>
+
+        <div id="postmobile">
+            <div id="Post1">
+                <p>LinkedIn is better on the new Windows app</p>
+                <img src="./close_24dp_000000_FILL1_wght400_GRAD0_opsz24.svg" alt="">
+            </div>
+            <div id="Post2">
+                <p>Never miss a reaction or comment</p>
+            </div>
+            <div>
+                <button id="PostButton">open the app</button>
+            </div>
+        </div>
+
+        <br>
+
+
+
+
+        <div id="middelsecoundmobile">
+
+            <div>
+                <button id="middelsecoundButton1">All</button>
+            </div>
+            <div>
+                <button id="middelsecoundButton2">Jobs </button>
+            </div>
+            <div>
+                <button id="middelsecoundButton3">My Post</button>
+            </div>
+            <div>
+                <button id="middelsecoundButton4">Mention</button>
+            </div>
+
+        </div>
+
+        <div id="HeaderLowerMainRight2Secound">
+            <div>
+                <img id="HeaderLowerMainRight2SecoundImg"
+                    src="https://th.bing.com/th/id/OIP.YQGwtpOGecZajkbh2HMMGAHaHa?rs=1&pid=ImgDetMain" alt="">
+                <p>
+            </div>
+            <div id="InviteInfo">
+                <p>
+                <h4>Ganesh Patil </h4>Never Stop Believing
+
+                Never Stop Inspiring
+
+                Happy Monday
+
+                Love ❤️ 😍 Love ❤️ 😍 </p>
+                <p>Data Engineer
+
+                    Suhas Gholkar and 10 other mutual connections</p>
+            </div>
+
+        </div>
+         <div id="HeaderLowerMainRight2Secound">
+            <div>
+                <img id="HeaderLowerMainRight2SecoundImg"
+                    src="https://th.bing.com/th/id/OIP.YQGwtpOGecZajkbh2HMMGAHaHa?rs=1&pid=ImgDetMain" alt="">
+                <p>
+            </div>
+            <div id="InviteInfo">
+                <p>
+                <h4>Ganesh Patil </h4>Never Stop Believing
+
+                Never Stop Inspiring
+
+                Happy Monday
+
+                Love ❤️ 😍 Love ❤️ 😍 </p>
+                <p>Data Engineer
+
+                    Suhas Gholkar and 10 other mutual connections</p>
+            </div>
+
+        </div>
+         <div id="HeaderLowerMainRight2Secound">
+            <div>
+                <img id="HeaderLowerMainRight2SecoundImg"
+                    src="https://th.bing.com/th/id/OIP.YQGwtpOGecZajkbh2HMMGAHaHa?rs=1&pid=ImgDetMain" alt="">
+                <p>
+            </div>
+            <div id="InviteInfo">
+                <p>
+                <h4>Ganesh Patil </h4>Never Stop Believing
+
+                Never Stop Inspiring
+
+                Happy Monday
+
+                Love ❤️ 😍 Love ❤️ 😍 </p>
+                <p>Data Engineer
+
+                    Suhas Gholkar and 10 other mutual connections</p>
+            </div>
+
+        </div>
+         <div id="HeaderLowerMainRight2Secound">
+            <div>
+                <img id="HeaderLowerMainRight2SecoundImg"
+                    src="https://th.bing.com/th/id/OIP.YQGwtpOGecZajkbh2HMMGAHaHa?rs=1&pid=ImgDetMain" alt="">
+                <p>
+            </div>
+            <div id="InviteInfo">
+                <p>
+                <h4>Ganesh Patil </h4>Never Stop Believing
+
+                Never Stop Inspiring
+
+                Happy Monday
+
+                Love ❤️ 😍 Love ❤️ 😍 </p>
+                <p>Data Engineer
+
+                    Suhas Gholkar and 10 other mutual connections</p>
+            </div>
+
+        </div>
+
+
+        <div id="right2mobile">
+            <h2> Try LinkDin on the windows app</h2>
+        </div>
+        <div id="right3mobile">
+            <footer id="footerrightmobile">
+                <span id="rightspanmobile">About</span>
+                <span id="rightspanmobile">Accessability</span>
+                <span id="rightspanmobile">Help center</span><br>
+                <br>
+                <span id="rightspanmobile">Privacy & Terms</span>
+                <span id="rightspanmobile">Ad choice</span>
+                <span id="rightspanmobile">Advertising</span><br>
+                <br>
+                <span id="rightspanmobile">Business</span>
+                <span id="rightspanmobile">Services</span>
+                <span id="rightspanmobile">Get the LinkDin app</span>
+                <span id="rightspanmobile">More</span>
+            </footer>
+        </div>
+        <img src="https://th.bing.com/th/id/R.ef2f3c0ea2d1116f00a5bc56b8c066ce?rik=GYaDoFewrbjMYA&riu=http%3a%2f%2f1000marcas.net%2fwp-content%2fuploads%2f2020%2f01%2fLogo-Linkedin.png&ehk=S4bpGdTYO0hvPM28u%2bFMX4ma7sBWXFdx85iEGZWSx1I%3d&risl=&pid=ImgRaw&r=0"
+            alt="" style="height: 50px; width: 70px;">
+
+
+
+</body>
+
+</html>
